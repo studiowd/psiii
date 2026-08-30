@@ -1,0 +1,366 @@
+<section id="contacto" class="epps-contact">
+  <div class="container epps-contact__grid">
+    <div class="epps-contact__intro">
+      <h2>Contacto e<br />Inscripciones</h2>
+      <p>
+        Dejanos tu consulta para recibir orientación particular o reservar tu
+        lugar en la cursada seleccionada.
+      </p>
+    </div>
+
+    <form class="epps-contact__form" data-contact-form>
+      <div class="epps-contact__fields">
+        <label class="epps-contact__field">
+          <span>Nombre</span>
+          <input type="text" name="nombre" autocomplete="given-name" />
+        </label>
+
+        <label class="epps-contact__field">
+          <span>Apellido</span>
+          <input type="text" name="apellido" autocomplete="family-name" />
+        </label>
+
+        <label class="epps-contact__field">
+          <span>Email</span>
+          <input type="email" name="email" autocomplete="email" />
+        </label>
+
+        <label class="epps-contact__field">
+          <span>Teléfono</span>
+          <input type="tel" name="telefono" autocomplete="tel" />
+        </label>
+      </div>
+
+      <fieldset class="epps-contact__options">
+        <legend>Consulta</legend>
+
+        <label><input type="radio" name="consulta" value="psicologia-social" /> Psicología Social Psicoanalítica</label>
+        <label><input type="radio" name="consulta" value="psicoanalisis" /> Psicoanálisis</label>
+        <label><input type="radio" name="consulta" value="modalidad-intensiva" /> Modalidad intensiva</label>
+        <label><input type="radio" name="consulta" value="seminario" /> Seminario</label>
+      </fieldset>
+
+      <label class="epps-contact__message">
+        <span>Mensaje</span>
+        <textarea name="mensaje" rows="3" placeholder="Escribí tu mensaje..."></textarea>
+      </label>
+
+      <div class="epps-contact__submit-row">
+        <button class="epps-contact__submit" type="submit">ENVIAR</button>
+      </div>
+
+      <p class="epps-contact__status" aria-live="polite" data-form-status></p>
+    </form>
+  </div>
+</section>
+
+<style>
+  .epps-contact {
+    background: var(--color-red);
+    color: var(--color-white);
+    padding: 64px 0 70px;
+  }
+
+  .epps-contact__grid {
+    display: grid;
+    gap: 42px;
+  }
+
+  .epps-contact__intro {
+    max-width: 420px;
+  }
+
+  .epps-contact__intro h2 {
+    margin: 0 0 16px;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: clamp(2.2rem, 9vw, 3.4rem);
+    line-height: .95;
+    letter-spacing: -.045em;
+  }
+
+  .epps-contact__intro p {
+    margin: 0;
+    max-width: 330px;
+    font-family: var(--font-body);
+    font-size: .93rem;
+    line-height: 1.55;
+  }
+
+  .epps-contact__form {
+    display: grid;
+    gap: 26px;
+  }
+
+  .epps-contact__fields {
+    display: grid;
+    gap: 22px;
+  }
+
+  .epps-contact__field,
+  .epps-contact__message {
+    display: grid;
+    gap: 7px;
+  }
+
+  .epps-contact__field span,
+  .epps-contact__message span,
+  .epps-contact__options legend {
+    font-family: var(--font-heading);
+    font-size: .7rem;
+    font-weight: 700;
+  }
+
+  .epps-contact input[type="text"],
+  .epps-contact input[type="email"],
+  .epps-contact input[type="tel"],
+  .epps-contact textarea {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .72);
+    border-radius: 0;
+    outline: none;
+    background: transparent;
+    color: var(--color-white);
+    padding: 4px 0 9px;
+    font-family: var(--font-body);
+  }
+
+  .epps-contact textarea {
+    resize: vertical;
+    min-height: 72px;
+  }
+
+  .epps-contact textarea::placeholder {
+    color: rgba(255, 255, 255, .65);
+  }
+
+  .epps-contact input:focus,
+  .epps-contact textarea:focus {
+    border-bottom-color: var(--color-yellow);
+  }
+
+  .epps-contact__options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .epps-contact__options legend {
+    width: 100%;
+    margin-bottom: 3px;
+  }
+
+  .epps-contact__options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-body);
+    font-size: .72rem;
+    line-height: 1.2;
+  }
+
+  .epps-contact__options input[type="radio"] {
+    accent-color: var(--color-navy-secondary);
+  }
+
+  .epps-contact__submit-row {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .epps-contact__submit {
+    min-width: 132px;
+    min-height: 46px;
+    padding: 11px 24px;
+    border: 0;
+    background: var(--color-navy-secondary);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    cursor: pointer;
+    transition: transform .2s ease, background-color .2s ease;
+  }
+
+  .epps-contact__submit:hover {
+    background: var(--color-navy);
+    transform: translateY(-2px);
+  }
+
+  .epps-contact__status {
+    min-height: 1em;
+    margin: -12px 0 0;
+    font-family: var(--font-body);
+    font-size: .78rem;
+  }
+
+  @media (min-width: 700px) {
+    .epps-contact__fields {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px 34px;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .epps-contact {
+      padding: 74px 0 80px;
+    }
+
+    .epps-contact__grid {
+      grid-template-columns: minmax(260px, .72fr) minmax(0, 1.45fr);
+      gap: 74px;
+      align-items: start;
+    }
+
+    .epps-contact__intro h2 {
+      font-size: clamp(2.6rem, 4vw, 4rem);
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll("[data-contact-form]").forEach((form) => {
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const status = form.querySelector("[data-form-status]");
+      if (status) {
+        status.textContent = "Formulario listo para conectar con tu medio de contacto.";
+      }
+    });
+  });
+</script>
+
+
+<style>
+@media (max-width: 430px) {
+  .epps-contact {
+    padding: 58px 0 66px;
+  }
+
+  .epps-contact__grid {
+    gap: 36px;
+  }
+
+  .epps-contact__intro h2 {
+    font-size: clamp(2.3rem, 10vw, 2.8rem);
+  }
+
+  .epps-contact__intro p {
+    max-width: 350px;
+    font-size: .92rem;
+  }
+
+  .epps-contact__form {
+    gap: 30px;
+  }
+
+  .epps-contact__fields {
+    gap: 25px;
+  }
+
+  .epps-contact__field span,
+  .epps-contact__message span,
+  .epps-contact__options legend {
+    font-size: .72rem;
+  }
+
+  .epps-contact input[type="text"],
+  .epps-contact input[type="email"],
+  .epps-contact input[type="tel"],
+  .epps-contact textarea {
+    min-height: 42px;
+    padding-bottom: 11px;
+    font-size: .94rem;
+  }
+
+  .epps-contact__options {
+    display: grid;
+    gap: 12px;
+  }
+
+  .epps-contact__options label {
+    font-size: .78rem;
+  }
+
+  .epps-contact__submit {
+    min-width: 142px;
+    min-height: 48px;
+  }
+}
+</style>
+
+<style>
+@media (max-width: 430px) {
+  .epps-contact__grid {
+    justify-items: center;
+  }
+
+  .epps-contact__intro {
+    max-width: 350px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .epps-contact__intro p {
+    margin-inline: auto;
+  }
+
+  .epps-contact__form {
+    width: min(100%, 350px);
+    margin-inline: auto;
+  }
+
+  .epps-contact__fields {
+    width: 100%;
+  }
+
+  .epps-contact__field,
+  .epps-contact__message {
+    width: 100%;
+  }
+
+  .epps-contact__options {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 12px;
+  }
+
+  .epps-contact__options legend {
+    margin-bottom: 4px;
+    text-align: left;
+  }
+
+  .epps-contact__options label {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .epps-contact__options input[type="radio"] {
+    margin: 0;
+  }
+
+  .epps-contact__submit-row {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .epps-contact__submit {
+    min-width: 150px;
+  }
+
+  .epps-contact__status {
+    text-align: center;
+  }
+}
+</style>

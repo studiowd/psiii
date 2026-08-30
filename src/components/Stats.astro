@@ -1,0 +1,109 @@
+<section class="stats" aria-label="Estadísticas de EPPS">
+  <div class="container stats-grid">
+    <div class="stat"><strong>26+</strong><span>Años</span></div>
+    <div class="stat"><strong>1200+</strong><span>Cursantes</span></div>
+    <div class="stat"><strong>17+</strong><span>Países</span></div>
+    <div class="stat"><strong>100%</strong><span>Online</span></div>
+  </div>
+</section>
+
+<style>
+  section.stats{
+      padding-left:0vw;
+    }
+ 
+  .stats {
+    background: var(--color-white);
+    padding-block: clamp(34px, 5vw, 58px);
+  }
+
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(24px, 5vw, 42px) clamp(16px, 4vw, 34px);
+  
+  }
+
+  .stat {
+    position: relative;
+    min-width: 0;
+    padding-left: clamp(14px, 3vw, 24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: var(--color-navy);
+  }
+
+  .stat::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    bottom: 4px;
+    width: 2px;
+    background: var(--color-red);
+  }
+
+  .stat strong {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: .88;
+    letter-spacing: -.05em;
+    font-weight: 800;
+  }
+
+  .stat span {
+    margin-top: clamp(7px, 1.4vw, 10px);
+    font-family: var(--font-heading);
+    font-size: clamp(.64rem, 2.4vw, .82rem);
+    line-height: 1;
+    font-weight: 800;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+  }
+@media (min-width: 320px) and (max-width: 767px) {
+
+ section.stats{
+      padding-left:10vw;
+    }
+}
+  @media (min-width: 768px) {
+    section.stats{
+      padding-left:3vw;
+    }
+
+    .stats-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 0;
+    }
+    
+
+    .stat {
+      min-height: clamp(92px, 10vw, 126px);
+      padding-left: clamp(28px, 3vw, 48px);
+    }
+
+    .stat strong {
+      font-size: clamp(2.5rem, 3.7vw, 3.35rem);
+    }
+
+    .stat span {
+      font-size: clamp(.72rem, .9vw, .88rem);
+    }
+
+    .stat:first-child::before {
+      display: none;
+    } 
+  }
+
+   @media (min-width: 1024px) {
+    section.stats{
+      padding-left:5vw;
+    }
+
+
+   }
+
+
+</style>

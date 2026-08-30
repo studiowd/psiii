@@ -1,0 +1,16 @@
+:root {
+  --color-red: #CF0000;
+  --color-red-hover: #800000;
+  --color-navy: #141838;
+  --color-navy-secondary: #1E286E;
+  --color-navy-alt: #141A45;
+  --color-yellow: #FFE100;
+  --color-white: #FFFFFF;
+  --color-bg-light: #F8FAFC;
+  --color-text-dark: #141838;
+  --color-text-muted: #5A6578;
+  --color-text-light: #E2E8F0;
+  --font-heading: "Montserrat", "Alexandria", sans-serif;
+  --font-body: "Montserrat", "Alexandria", sans-serif;
+  --font-accent: "Alexandria", sans-serif;
+}

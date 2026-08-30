@@ -1,0 +1,469 @@
+<section id="testimonios" class="epps-testimonials">
+  <div class="container">
+    <div class="epps-testimonials__heading">
+      <p class="epps-testimonials__eyebrow">TESTIMONIOS</p>
+      <h2>Lo que dicen nuestros estudiantes</h2>
+    </div>
+
+    <div class="epps-testimonials__slider" data-testimonials-slider>
+      <button
+        class="epps-testimonials__arrow epps-testimonials__arrow--prev"
+        type="button"
+        aria-label="Testimonio anterior"
+        data-prev
+      >
+        &#10094;
+      </button>
+
+      <div class="epps-testimonials__track" data-track>
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Dalia Lucero</h3>
+            <span>Texas, Estados Unidos</span>
+          </div>
+          <p>
+            Estudiar mi especialidad en la Escuela Psicoanalítica de Psicología Social ha sido una de las
+            experiencias más valiosas de mi formación como psicóloga y psicoanalista. La calidad de la enseñanza
+            y el nivel académico de cada cátedra fueron excelentes, ya que estuvieron impartidas por docentes con
+            una amplia preparación y un profundo compromiso con la formación, en una institución seria y ética.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Romina Chelotti</h3>
+            <span>Buenos Aires, Argentina</span>
+          </div>
+          <p>
+            El acompañamiento de la Escuela fue un antes y un después en mi vida. En lo personal, me ayudó a
+            trascender, y en lo profesional, la supervisión y la dedicación de cada profesor me dio la seguridad
+            que necesito para ejercer con confianza. Ha sido, y sigue siendo una experiencia verdaderamente
+            transformadora.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Helga Shon</h3>
+            <span>Berlín, Alemania</span>
+          </div>
+          <p>
+            La EPPS no sólo me dio una profesión rentable de la que hoy vivo, sino que cambió radicalmente mi mirada
+            sobre las personas, los vínculos y las instituciones permitiéndome desempeños más eficaces y
+            gratificantes. Estoy sumamente agradecida.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Carina Castells</h3>
+            <span>Buenos Aires, Argentina</span>
+          </div>
+          <p>
+            Hay caminos que dejan una huella para siempre, y para mí, la Escuela Psicoanalítica de Psicología Social
+            fue uno de ellos.
+          </p>
+          <p>
+            Recibirme significó mucho más que obtener un título. Llevo conmigo no solo una formación, sino también
+            una experiencia que marcó mi vida y por la que estaré siempre profundamente agradecida.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Yenny Vargas</h3>
+            <span>Bogotá, Colombia</span>
+          </div>
+          <p>
+            Mi estancamiento durante seis años de psicoterapia cognitivo conductual fue impensadamente removido por
+            una cursada donde encontré sabiduría, acompañamiento y maravillosas herramientas para comprender la
+            realidad y transformarla, a partir de modificar actitudes y desarrollar aptitudes.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Teresa Mauro</h3>
+            <span>Buenos Aires, Argentina</span>
+          </div>
+          <p>
+            La escuela me brinda constante formación, aun siendo egresada. Es valorable la inclusión del Psicoanálisis
+            -exclusividad entre otras escuelas- ya que el abordaje está posicionado en comprender la mente de cada
+            sujeto en la trama vincular de los grupos, motor fundamental para lograr transformaciones personales y
+            sociales.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Alberto Ruiz</h3>
+            <span>Ciudad de México, México</span>
+          </div>
+          <p>
+            Lo que más valoro de la Escuela es hacer tanto el Psicoanálisis como la Psicología Social Psicoanalítica
+            un corpus ameno, divertido, inspirador, sin restarle substancia conceptual de autores tan indescifrables
+            como el propio Lacan.
+          </p>
+        </article>
+
+        <article class="epps-testimonial-card" data-card>
+          <div class="epps-testimonial-card__author">
+            <h3>Sylvie Slaby</h3>
+            <span>Praga, República Checa</span>
+          </div>
+          <p>
+            Mi paso por Escuela Psicoanalítica de Psicología Social me ha transformado de un ser contemplativo y
+            sobreadaptado a una verdadera constructora de mi propia identidad y de la realidad que me entorna.
+          </p>
+        </article>
+      </div>
+
+      <button
+        class="epps-testimonials__arrow epps-testimonials__arrow--next"
+        type="button"
+        aria-label="Siguiente testimonio"
+        data-next
+      >
+        &#10095;
+      </button>
+
+      <div class="epps-testimonials__dots" aria-label="Navegación de testimonios" data-dots>
+        {
+          Array.from({ length: 8 }, (_, index) => (
+            <button
+              class:list={[
+                "epps-testimonials__dot",
+                { "is-active": index === 0 },
+              ]}
+              type="button"
+              aria-label={`Ir al testimonio ${index + 1}`}
+              aria-current={index === 0 ? "true" : undefined}
+              data-dot
+              data-index={index}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .epps-testimonials {
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--color-navy-secondary), #2e3c9c);
+    color: var(--color-white);
+    padding: 68px 0 72px;
+  }
+
+  .epps-testimonials__heading {
+    max-width: 720px;
+    margin-bottom: 34px;
+  }
+
+  .epps-testimonials__eyebrow {
+    margin: 0 0 10px;
+    color: var(--color-yellow);
+    font-family: var(--font-heading);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+  }
+
+  .epps-testimonials__heading h2 {
+    margin: 0;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 8vw, 3rem);
+    line-height: 1;
+    letter-spacing: -.04em;
+  }
+
+  .epps-testimonials__slider {
+    position: relative;
+  }
+
+  .epps-testimonials__track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    padding: 2px 0 8px;
+  }
+
+  .epps-testimonials__track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .epps-testimonial-card {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-width: 0;
+    min-height: 390px;
+    padding: 28px 24px;
+    background: rgba(20, 24, 56, .92);
+    border: 1px solid rgba(255, 255, 255, .12);
+  }
+
+  .epps-testimonial-card__author h3 {
+    margin: 0 0 5px;
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: 1.15rem;
+    line-height: 1.1;
+  }
+
+  .epps-testimonial-card__author span {
+    color: #eed570;
+    font-family: var(--font-body);
+    font-size: .78rem;
+  }
+
+  .epps-testimonial-card > p {
+    margin: 0;
+    color: var(--color-text-light);
+    font-family: var(--font-body);
+    font-size: .94rem;
+    line-height: 1.62;
+  }
+
+  .epps-testimonial-card > p + p {
+    margin-top: -12px;
+  }
+
+  .epps-testimonials__arrow {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: var(--color-yellow);
+    color: var(--color-navy);
+    font-size: 1.2rem;
+    font-weight: 900;
+    line-height: 1;
+    transform: translateY(-50%);
+    cursor: pointer;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, .18);
+  }
+
+  .epps-testimonials__arrow--prev {
+    left: -9px;
+  }
+
+  .epps-testimonials__arrow--next {
+    right: -9px;
+  }
+
+  .epps-testimonials__arrow:disabled {
+    opacity: .35;
+    cursor: default;
+  }
+
+  .epps-testimonials__dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 26px;
+  }
+
+  .epps-testimonials__dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .35);
+    cursor: pointer;
+    transition: width .2s ease, background-color .2s ease;
+  }
+
+  .epps-testimonials__dot.is-active {
+    width: 24px;
+    border-radius: 999px;
+    background: var(--color-yellow);
+  }
+
+  @media (min-width: 600px) {
+    .epps-testimonial-card {
+      flex-basis: calc((100% - 16px) / 2);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .epps-testimonials {
+      padding: 84px 0 88px;
+    }
+
+    .epps-testimonials__heading {
+      margin-bottom: 42px;
+    }
+
+    .epps-testimonial-card {
+      flex-basis: calc((100% - 32px) / 3);
+      min-height: 420px;
+      padding: 30px 26px;
+    }
+
+    .epps-testimonials__arrow--prev {
+      left: -20px;
+    }
+
+    .epps-testimonials__arrow--next {
+      right: -20px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .epps-testimonial-card {
+      min-height: 400px;
+    }
+  }
+</style>
+
+<script>
+  document.querySelectorAll("[data-testimonials-slider]").forEach((slider) => {
+    const track = slider.querySelector("[data-track]");
+    const cards = Array.from(slider.querySelectorAll("[data-card]"));
+    const dots = Array.from(slider.querySelectorAll("[data-dot]"));
+    const prev = slider.querySelector("[data-prev]");
+    const next = slider.querySelector("[data-next]");
+
+    if (!(track instanceof HTMLElement) || cards.length === 0) return;
+
+    let activeIndex = 0;
+    let scrollTimer;
+
+    const setActive = (index) => {
+      activeIndex = Math.max(0, Math.min(cards.length - 1, index));
+
+      dots.forEach((dot, dotIndex) => {
+        const active = dotIndex === activeIndex;
+        dot.classList.toggle("is-active", active);
+        if (active) {
+          dot.setAttribute("aria-current", "true");
+        } else {
+          dot.removeAttribute("aria-current");
+        }
+      });
+
+      if (prev instanceof HTMLButtonElement) prev.disabled = activeIndex === 0;
+      if (next instanceof HTMLButtonElement) next.disabled = activeIndex === cards.length - 1;
+    };
+
+    const goTo = (index) => {
+      const card = cards[index];
+      if (!(card instanceof HTMLElement)) return;
+
+      track.scrollTo({
+        left: card.offsetLeft - track.offsetLeft,
+        behavior: "smooth",
+      });
+
+      setActive(index);
+    };
+
+    const findClosestCard = () => {
+      const trackLeft = track.scrollLeft;
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+
+      cards.forEach((card, index) => {
+        if (!(card instanceof HTMLElement)) return;
+        const left = card.offsetLeft - track.offsetLeft;
+        const distance = Math.abs(left - trackLeft);
+
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      setActive(closestIndex);
+    };
+
+    prev?.addEventListener("click", () => goTo(activeIndex - 1));
+    next?.addEventListener("click", () => goTo(activeIndex + 1));
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener("click", () => goTo(index));
+    });
+
+    track.addEventListener(
+      "scroll",
+      () => {
+        window.clearTimeout(scrollTimer);
+        scrollTimer = window.setTimeout(findClosestCard, 80);
+      },
+      { passive: true }
+    );
+
+    setActive(0);
+  });
+</script>
+
+
+<style>
+@media (max-width: 430px) {
+  .epps-testimonials {
+    padding: 58px 0 64px;
+  }
+
+  .epps-testimonials__heading {
+    margin-bottom: 28px;
+  }
+
+  .epps-testimonials__heading h2 {
+    max-width: 340px;
+    font-size: clamp(2rem, 9vw, 2.45rem);
+  }
+
+  .epps-testimonials__track {
+    gap: 12px;
+  }
+
+  .epps-testimonial-card {
+    flex-basis: 100%;
+    min-height: 360px;
+    padding: 26px 22px;
+    gap: 18px;
+  }
+
+  .epps-testimonial-card__author h3 {
+    font-size: 1.08rem;
+  }
+
+  .epps-testimonial-card > p {
+    font-size: .91rem;
+    line-height: 1.58;
+  }
+
+  .epps-testimonials__arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .epps-testimonials__arrow--prev {
+    left: -7px;
+  }
+
+  .epps-testimonials__arrow--next {
+    right: -7px;
+  }
+
+  .epps-testimonials__dots {
+    margin-top: 22px;
+  }
+}
+</style>

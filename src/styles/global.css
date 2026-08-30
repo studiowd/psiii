@@ -1,0 +1,311 @@
+/* =========================================================
+   EPPS — GLOBAL.CSS
+   Base compartida + escalado fluido con clamp().
+   Los estilos propios de cada sección viven en su .astro.
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+/* =========================================================
+   LAYOUT GLOBAL
+   ========================================================= */
+
+:root {
+  --page-gutter: clamp(24px, 5vw, 40px);
+  --section-space: clamp(58px, 7vw, 104px);
+  --page-margin: clamp(16px, 5.56vw, 80px);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: var(--page-margin);
+  box-sizing: border-box;
+}
+
+.section {
+  padding-block: var(--section-space);
+}
+
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* =========================================================
+   UTILIDADES
+   ========================================================= */
+
+.eyebrow {
+  font-family: var(--font-heading);
+  font-size: clamp(.62rem, .75vw, .78rem);
+  letter-spacing: .12em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
+.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* =========================================================
+   BOTONES GLOBALES
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(40px, 4vw, 46px);
+  padding: clamp(10px, 1vw, 12px) clamp(18px, 2vw, 26px);
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: clamp(.64rem, .72vw, .78rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  transition: transform .25s ease, background-color .25s ease, color .25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-red {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.btn-red:hover {
+  background: var(--color-red-hover);
+}
+
+.btn-yellow {
+  background: var(--color-yellow);
+  color: var(--color-navy);
+}
+
+.btn-blue {
+  background: var(--color-navy-secondary);
+  color: var(--color-white);
+}
+
+.btn-blue:hover {
+  background: var(--color-navy);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* =====================================================
+   GLOBAL ANIMATIONS
+===================================================== */
+
+/* ---------- FADE UP ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ---------- FADE IN ---------- */
+
+.reveal-fade {
+  opacity: 0;
+
+  transition:
+    opacity 0.8s ease;
+}
+
+.reveal-fade.is-visible {
+  opacity: 1;
+}
+
+
+/* ---------- DESDE IZQUIERDA ---------- */
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-40px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ---------- DESDE DERECHA ---------- */
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(40px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ---------- SCALE ---------- */
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* ---------- DELAYS ---------- */
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .reveal,
+  .reveal-fade,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+}

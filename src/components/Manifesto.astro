@@ -1,0 +1,569 @@
+<section class="manifesto" id="manifiesto">
+
+  <div class="container manifesto__inner">
+
+    <!-- =====================================================
+         TÍTULO + INTRODUCCIÓN
+         ===================================================== -->
+    <div class="manifesto__title">
+
+      <h2>
+        <span class="manifesto__m">M</span><span class="manifesto__rest">anifiesto</span>
+      </h2>
+
+      <p class="manifesto__lead">
+        Espacio de encuentro y lectura colectiva, pensado para
+        interesados en la causa de una Psicología Social Psicoanalítica:
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         TEXTO CENTRAL
+         ===================================================== -->
+    <div class="manifesto__copy">
+
+      <p>
+        Propone un trabajo sobre la teoría a partir del análisis de sus
+        fundamentos filosóficos, y en íntima relación con el pensamiento
+        crítico, profundizando así la articulación específica entre la
+        Psicología Social pichoniana y el Psicoanálisis, núcleo central
+        de la orientación de nuestra Escuela.
+        <strong>Para participar no es necesario ser alumno de la EPPS.</strong>
+      </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         DETALLES
+         ===================================================== -->
+    <div class="manifesto__details">
+
+      <ul>
+
+        <li>
+          Encuentros virtuales por Zoom.
+        </li>
+
+        <li>
+          Primer sábado de cada mes, de 10:00 a 12:30 hs.
+        </li>
+
+        <li>
+          Los aranceles son accesibles e incluyen el material
+          bibliográfico y la grabación del encuentro.
+        </li>
+
+      </ul>
+
+      <a class="manifesto__button" href="#contacto">
+        Participar
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+
+  /* =========================================================
+     MANIFIESTO
+     MOBILE FIRST
+     ========================================================= */
+
+  .manifesto {
+    background:
+      linear-gradient(
+        105deg,
+        var(--color-navy-secondary) 0%,
+        #2E3C9C 100%
+      );
+
+    color: var(--color-white);
+
+    padding-block: 58px;
+  }
+
+
+  /* =========================================================
+     CONTENEDOR / GRID
+     ========================================================= */
+
+  .manifesto__inner {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 0;
+  }
+
+
+  /* =========================================================
+     TÍTULO
+     ========================================================= */
+
+  .manifesto__title h2 {
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(2.8rem, 12vw, 4rem);
+
+    line-height: .92;
+
+    letter-spacing: -.055em;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+  }
+
+
+  /* M ROJA */
+
+  .manifesto__m {
+    color: var(--color-red);
+  }
+
+
+  /* RESTO DEL TÍTULO BLANCO */
+
+  .manifesto__rest {
+    color: var(--color-white);
+  }
+
+
+  /* =========================================================
+     INTRODUCCIÓN
+     ========================================================= */
+
+  .manifesto__lead {
+    margin: 24px 0 0;
+
+    max-width: 580px;
+
+    font-size: clamp(1rem, 4.2vw, 1.25rem);
+
+    line-height: 1.48;
+
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, .96);
+  }
+
+
+  /* =========================================================
+     TEXTO CENTRAL
+     ========================================================= */
+
+  .manifesto__copy {
+    margin-top: 34px;
+
+    max-width: 620px;
+  }
+
+
+  .manifesto__copy p {
+    margin: 0;
+
+    font-size: clamp(.98rem, 4vw, 1.12rem);
+
+    line-height: 1.58;
+
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, .96);
+  }
+
+
+  /* CONTINÚA EN EL MISMO PÁRRAFO */
+
+  .manifesto__copy strong {
+    font-weight: 800;
+
+    color: var(--color-white);
+  }
+
+
+  /* =========================================================
+     DETALLES
+     ========================================================= */
+
+  .manifesto__details {
+    margin-top: 34px;
+  }
+
+
+  .manifesto__details ul {
+    display: grid;
+
+    gap: 14px;
+
+    margin: 0;
+
+    padding: 0;
+
+    list-style: none;
+  }
+
+
+  .manifesto__details li {
+    position: relative;
+
+    padding-left: 18px;
+
+    font-size: clamp(.95rem, 3.8vw, 1.08rem);
+
+    line-height: 1.5;
+
+    color: rgba(255, 255, 255, .96);
+  }
+
+
+  .manifesto__details li::before {
+    content: "•";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    color: var(--color-white);
+  }
+
+
+  /* =========================================================
+     BOTÓN
+     ========================================================= */
+
+  .manifesto__button {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: fit-content;
+
+    min-width: 145px;
+
+    min-height: 44px;
+
+    margin-top: 28px;
+
+    padding: 13px 26px;
+
+    background: var(--color-red);
+
+    color: var(--color-white);
+
+    font-family: var(--font-heading);
+
+    font-size: .78rem;
+
+    line-height: 1;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+
+    letter-spacing: .04em;
+
+    text-decoration: none;
+
+    transition:
+      transform .2s ease,
+      background-color .2s ease;
+  }
+
+
+  .manifesto__button:hover {
+    transform: translateY(-2px);
+
+    background: var(--color-red-hover);
+  }
+
+
+  /* =========================================================
+     MOBILE
+     <= 430px
+     ========================================================= */
+
+  @media (max-width: 430px) {
+
+    .manifesto {
+      padding-block: 52px 58px;
+    }
+
+
+    /* TÍTULO */
+
+    .manifesto__title h2 {
+      font-size: clamp(2.7rem, 12vw, 3.25rem);
+
+      line-height: .95;
+    }
+
+
+    /* INTRO */
+
+    .manifesto__lead {
+      margin-top: 22px;
+
+      font-size: clamp(1rem, 4.25vw, 1.12rem);
+
+      line-height: 1.48;
+    }
+
+
+    /* TEXTO CENTRAL */
+
+    .manifesto__copy {
+      margin-top: 32px;
+    }
+
+
+    .manifesto__copy p {
+      font-size: clamp(.95rem, 4vw, 1.05rem);
+
+      line-height: 1.58;
+    }
+
+
+    /* DETALLES */
+
+    .manifesto__details {
+      margin-top: 32px;
+    }
+
+
+    .manifesto__details ul {
+      gap: 13px;
+    }
+
+
+    .manifesto__details li {
+      font-size: clamp(.93rem, 3.8vw, 1.02rem);
+
+      line-height: 1.52;
+    }
+
+
+    /* BOTÓN */
+
+    .manifesto__button {
+      min-width: 145px;
+
+      min-height: 44px;
+
+      margin-top: 26px;
+    }
+
+  }
+
+
+  /* =========================================================
+     TABLET
+     >= 768px
+     ========================================================= */
+
+  @media (min-width: 768px) {
+
+    .manifesto {
+      padding-block: 72px;
+    }
+
+
+    .manifesto__inner {
+      grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+      column-gap: clamp(40px, 6vw, 70px);
+
+      row-gap: 38px;
+    }
+
+
+    /* COLUMNA 1 */
+
+    .manifesto__title {
+      grid-column: 1;
+    }
+
+
+    /* COLUMNA 2 */
+
+    .manifesto__copy {
+      grid-column: 2;
+
+      margin-top: 0;
+    }
+
+
+    .manifesto__details {
+      grid-column: 2;
+
+      margin-top: 0;
+    }
+
+
+    /* TÍTULO */
+
+    .manifesto__title h2 {
+      font-size: clamp(3rem, 6vw, 4rem);
+    }
+
+
+    /* INTRO */
+
+    .manifesto__lead {
+      margin-top: 20px;
+
+      font-size: 1rem;
+
+      line-height: 1.5;
+    }
+
+
+    /* TEXTO */
+
+    .manifesto__copy p {
+      font-size: .95rem;
+
+      line-height: 1.55;
+    }
+
+
+    /* DETALLES */
+
+    .manifesto__details li {
+      font-size: .95rem;
+
+      line-height: 1.5;
+    }
+
+  }
+
+
+  /* =========================================================
+     DESKTOP
+     >= 1024px
+     ========================================================= */
+
+  @media (min-width: 1024px) {
+
+    .manifesto {
+      padding-block: 72px 76px;
+    }
+
+
+    .manifesto__inner {
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 1.15fr)
+        minmax(0, .9fr);
+
+      gap: clamp(40px, 4vw, 70px);
+
+      align-items: start;
+    }
+
+
+    /* VOLVEMOS A 3 COLUMNAS */
+
+    .manifesto__title,
+    .manifesto__copy,
+    .manifesto__details {
+      grid-column: auto;
+
+      margin-top: 0;
+    }
+
+
+    /* TÍTULO */
+
+    .manifesto__title h2 {
+      font-size: clamp(3rem, 4vw, 4.3rem);
+    }
+
+
+    /* INTRO */
+
+    .manifesto__lead {
+      margin-top: 20px;
+
+      max-width: 390px;
+
+      font-size: clamp(.9rem, .9vw, 1rem);
+
+      line-height: 1.5;
+    }
+
+
+    /* TEXTO CENTRAL */
+
+    .manifesto__copy {
+      max-width: 460px;
+    }
+
+
+    .manifesto__copy p {
+      font-size: clamp(.86rem, .8vw, .95rem);
+
+      line-height: 1.55;
+    }
+
+
+    /* DETALLES */
+
+    .manifesto__details ul {
+      gap: 10px;
+    }
+
+
+    .manifesto__details li {
+      font-size: clamp(.84rem, .78vw, .92rem);
+
+      line-height: 1.5;
+    }
+
+
+    /* BOTÓN */
+
+    .manifesto__button {
+      margin-top: 22px;
+    }
+
+  }
+
+
+  /* =========================================================
+     DESKTOP GRANDE
+     >= 1280px
+     ========================================================= */
+
+  @media (min-width: 1280px) {
+
+    .manifesto__inner {
+      grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(0, 1.15fr)
+        minmax(0, .9fr);
+
+      gap: 58px;
+    }
+
+
+    .manifesto__title h2 {
+      font-size: 4rem;
+    }
+
+  }
+
+</style>

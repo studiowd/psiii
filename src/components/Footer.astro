@@ -1,0 +1,310 @@
+<footer class="epps-footer">
+  <div class="container epps-footer__inner">
+
+    <div class="epps-footer__brand">
+      <a href="#inicio" class="epps-footer__logo">
+        <img src="/images/logo.svg" alt="EPPS" />
+      </a>
+    </div>
+
+    <nav class="epps-footer__nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#formacion">Formación</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+
+    <nav class="epps-footer__nav">
+      <a href="#clases">Clases</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#">Legales</a>
+    </nav>
+
+    <div class="epps-footer__contact">
+      <a href="tel:+5491127232303" class="epps-footer__contact-link">
+        ☎ +54 9 11 2723 2303
+      </a>
+
+      <a href="mailto:info@escuelapsicoanalitica.org" class="epps-footer__contact-link">
+        ✉ info@escuelapsicoanalitica.org
+      </a>
+
+      <div class="epps-footer__socials">
+        <a href="#" aria-label="Facebook">f</a>
+        <a href="#" aria-label="Instagram">◎</a>
+        <a href="#" aria-label="YouTube">▶</a>
+      </div>
+    </div>
+
+    <div class="epps-footer__cta-wrapper">
+      <a href="#contacto" class="epps-footer__signup">
+        Inscribirme
+      </a>
+    </div>
+
+  </div>
+</footer>
+
+
+<style>
+.epps-footer {
+  width: 100%;
+  background: var(--color-navy-secondary);
+  color: var(--color-white);
+
+  padding-block: clamp(48px, 5vw, 72px);
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.epps-footer__inner {
+  width: calc(100% - 80px);
+  max-width: 1440px;
+
+  margin-inline: auto;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 40px;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.epps-footer__brand {
+  flex: 0 0 auto;
+}
+
+.epps-footer__logo {
+  display: block;
+}
+
+.epps-footer__logo img {
+  display: block;
+  width: clamp(72px, 6vw, 92px);
+  height: auto;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+.epps-footer__nav {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  flex: 0 0 auto;
+}
+
+.epps-footer__nav a {
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.epps-footer__nav a:hover {
+  color: var(--color-white);
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+.epps-footer__contact {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 14px;
+
+  flex: 0 0 auto;
+}
+
+.epps-footer__contact-link {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  color: var(--color-white);
+
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+
+/* =========================
+   REDES
+========================= */
+
+.epps-footer__socials {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 8px;
+}
+
+.epps-footer__socials a {
+  display: grid;
+  place-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  border: 1.5px solid var(--color-yellow);
+  border-radius: 50%;
+
+  color: var(--color-yellow);
+
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.epps-footer__cta-wrapper {
+  flex: 0 0 auto;
+
+  display: flex;
+  justify-content: flex-end;
+
+  padding-top: 20px;
+}
+
+.epps-footer__signup {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 145px;
+  min-height: 43px;
+
+  padding-inline: 22px;
+
+  background: var(--color-red);
+
+  color: var(--color-white);
+
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+}
+
+.epps-footer__signup:hover {
+  background: var(--color-red-hover);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .epps-footer__inner {
+    width: calc(100% - 64px);
+
+    display: grid;
+
+    grid-template-columns:
+      auto
+      1fr
+      1fr
+      1.4fr;
+
+    gap: 30px;
+  }
+
+  .epps-footer__cta-wrapper {
+    grid-column: 4;
+
+    justify-content: flex-start;
+
+    padding-top: 5px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+  .epps-footer {
+    padding-block: 48px;
+  }
+
+  .epps-footer__inner {
+    width: calc(100% - 48px);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 34px;
+
+    text-align: center;
+  }
+
+  .epps-footer__brand,
+  .epps-footer__nav,
+  .epps-footer__contact,
+  .epps-footer__cta-wrapper {
+    align-items: center;
+  }
+
+  .epps-footer__nav {
+    align-items: center;
+  }
+
+  .epps-footer__contact {
+    align-items: center;
+  }
+
+  .epps-footer__contact-link {
+    justify-content: center;
+  }
+
+  .epps-footer__socials {
+    justify-content: center;
+  }
+
+  .epps-footer__cta-wrapper {
+    justify-content: center;
+
+    padding-top: 0;
+  }
+}
+</style>  

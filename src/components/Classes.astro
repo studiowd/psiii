@@ -1,0 +1,201 @@
+<section id="clases" class="epps-classes">
+  <div class="epps-classes__inner container">
+    <div class="epps-classes__copy">
+      <p>
+        Te invitamos a conocer nuestra dinámica de trabajo desde adentro.</p>
+        <strong>
+          Accedé a nuestros registros audiovisuales y experimentá cómo son
+          nuestros encuentros sincrónicos y espacios de intercambio.
+        </strong>
+      
+    </div>
+
+    <div class="epps-classes__action">
+      <a class="epps-classes__button" href="#testimonios" aria-label="Ver clases">
+        <span class="epps-classes__youtube" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <path d="M21.6 7.2a2.9 2.9 0 0 0-2.04-2.05C17.76 4.67 12 4.67 12 4.67s-5.76 0-7.56.48A2.9 2.9 0 0 0 2.4 7.2C1.92 9 1.92 12 1.92 12s0 3 .48 4.8a2.9 2.9 0 0 0 2.04 2.05c1.8.48 7.56.48 7.56.48s5.76 0 7.56-.48a2.9 2.9 0 0 0 2.04-2.05c.48-1.8.48-4.8.48-4.8s0-3-.48-4.8Z"/>
+            <path class="epps-classes__play" d="m10.1 15.3 4.95-3.3-4.95-3.3v6.6Z"/>
+          </svg>
+        </span>
+        <span>VER CLASES</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .epps-classes {
+    background: var(--color-white);
+    color: var(--color-navy);
+    padding: 64px 0 68px;
+    text-align: -webkit-center;
+  }
+
+  .epps-classes__inner {
+    display: grid;
+    gap: 34px;
+  }
+
+  
+
+  .epps-classes__copy p {
+    margin: 0;
+    font-family: var(--font-heading);
+    font-size: clamp(0.4rem, 6.6vw, 1.2rem);
+    line-height: 1.18;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+  }
+ .epps-classes__copy strong {
+      font-weight:800;
+    }
+  
+
+  .epps-classes__action {
+    display: flex;
+    justify-content: center;
+  }
+
+  .epps-classes__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 52px;
+    padding: 10px 28px;
+    border-radius: 999px;
+    background: var(--color-red);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-size: .8rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+    transition: transform .2s ease, background-color .2s ease;
+  }
+
+  .epps-classes__button:hover {
+    background: var(--color-red-hover);
+    transform: translateY(-2px);
+  }
+
+  .epps-classes__youtube {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 28px;
+    border-radius: 8px;
+    background: var(--color-white);
+    flex: 0 0 auto;
+  }
+
+  .epps-classes__youtube svg {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-red);
+  }
+
+  .epps-classes__youtube .epps-classes__play {
+    fill: var(--color-white);
+  }
+
+
+
+
+  @media (min-width: 768px) {
+    .epps-classes {
+      padding: 76px 0 80px;
+         text-align:left;
+    }
+
+    .epps-classes__inner {
+      grid-template-columns: minmax(0, 1.45fr) minmax(220px, .55fr);
+      align-items: center;
+      gap: 54px;
+    }
+
+    .epps-classes__action {
+      justify-content: flex-end;
+    }
+
+    .epps-classes__copy p {
+      font-size: clamp(0.4rem, 6.6vw, 1.3rem);
+    }
+   
+    
+  }
+
+  @media (min-width: 1200px) {
+    section.stats {
+      padding-left:0px;
+    }
+    .epps-classes {
+      padding: 86px 0 94px;
+         text-align:left;
+    }
+
+    .epps-classes__inner {
+      gap: 84px;
+    }
+
+    .epps-classes__button {
+      min-width: 238px;
+      min-height: 54px;
+    }
+    .epps-classes__copy {
+    max-width: 760px;
+    margin-left:100px;
+    
+  }
+     .epps-classes__copy p {
+      font-size: clamp(1.9rem, 6.6vw, 1.9rem);
+    }
+
+    .epps-classes__copy  strong {
+    display: block;
+    font-weight: 800;
+    font-size: clamp(1rem, 6.6vw, 2.17rem);
+    line-height:normal;
+  }
+  .epps-classes__action {
+    margin-right:100px;
+  }
+  }
+
+@media (max-width: 430px) {
+  .epps-classes {
+    padding: 58px 0 64px;
+    text-align: center;
+  }
+
+  .epps-classes__inner {
+    gap: 30px;
+  }
+
+  .epps-classes__copy {
+    max-width: 400px;
+ 
+  }
+ .epps-classes__copy {
+ 
+    margin-left:0px;
+    
+  }
+  .epps-classes__copy p {
+    font-size: clamp(0.4rem, 6.6vw, 1.3rem);
+    line-height: 1.2;
+  }
+.epps-classes__copy p strong {
+    display: block;
+    font-weight: 800;
+    font-size: clamp(0.4rem, 6.6vw, 1.17rem);
+  }
+  .epps-classes__button {
+    min-height: 50px;
+    padding-inline: 26px;
+  }
+  .epps-classes__action {
+    margin-right:0px;
+  }
+}
+</style>

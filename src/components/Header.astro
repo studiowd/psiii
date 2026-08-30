@@ -1,0 +1,194 @@
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="site-logo" href="#inicio" aria-label="EPPS - Inicio">
+      <img src="/images/logo_negro_nav.svg" alt="EPPS" class="site-logo__image" />
+      <span class="site-logo__text">
+        Escuela Psicoanalítica<br />de Psicología Social
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Navegación principal">
+      <a href="#formacion">Formación</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#clases">Clases</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+
+    <a class="btn btn-red site-header__cta" href="#contacto">Inscribirme</a>
+  </div>
+</header>
+
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.site-nav');
+
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    toggle.setAttribute('aria-label', open ? 'Abrir menú' : 'Cerrar menú');
+    nav?.classList.toggle('is-open');
+  });
+
+  nav?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      toggle?.setAttribute('aria-expanded', 'false');
+      toggle?.setAttribute('aria-label', 'Abrir menú');
+    });
+  });
+</script>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--color-white);
+    border-bottom: 1px solid rgba(20, 24, 56, .06);
+  }
+
+  .site-header__inner {
+    min-height: clamp(70px, 7vw, 106px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: clamp(12px, 2vw, 28px);
+    position: relative;
+  }
+
+  .site-logo {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+  }
+
+  .site-logo__image {
+    width: clamp(48px, 5vw, 72px);
+    height: auto;
+  }
+
+  .site-logo__text {
+    display: none;
+    color: var(--color-navy);
+    font-family: var(--font-accent);
+    font-size: clamp(.52rem, .6vw, .64rem);
+    line-height: 1.16;
+    font-weight: 700;
+  }
+
+  .menu-toggle {
+    order: 1;
+    width: 42px;
+    height: 42px;
+    padding: 8px 4px;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    flex: 0 0 auto;
+  }
+
+  .menu-toggle span {
+    width: 28px;
+    height: 2px;
+    background: var(--color-navy);
+    border-radius: 2px;
+  }
+
+  .site-header__cta {
+    order: 2;
+    margin-left: auto;
+    min-height: 38px;
+    padding-inline: clamp(15px, 4.5vw, 22px);
+    font-size: clamp(.61rem, 2.5vw, .72rem);
+  }
+
+  .site-nav {
+    display: none;
+    position: absolute;
+    z-index: 50;
+    top: 100%;
+    left: calc(var(--page-gutter) * -1);
+    right: calc(var(--page-gutter) * -1);
+    padding: 24px var(--page-gutter) 28px;
+    background: var(--color-white);
+    box-shadow: 0 18px 35px rgba(20, 24, 56, .12);
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .site-nav a {
+    color: var(--color-navy);
+    font-family: var(--font-heading);
+    font-size: .78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+  }
+
+  .site-nav a:hover {
+    color: var(--color-red);
+  }
+
+  @media (min-width: 768px) {
+    .site-logo {
+      display: flex;
+      order: 1;
+    }
+
+    .menu-toggle {
+      order: 3;
+    }
+
+    .site-header__cta {
+      order: 2;
+      margin-left: auto;
+    }
+
+    .site-nav {
+      top: 100%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .site-logo__text {
+      display: block;
+    }
+
+    .site-nav {
+      display: flex;
+      position: static;
+      order: 2;
+      flex-direction: row;
+      align-items: center;
+      margin-left: auto;
+      padding: 0;
+      gap: clamp(22px, 2.5vw, 38px);
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .site-nav a {
+      font-size: clamp(.72rem, .75vw, .82rem);
+    }
+
+    .site-header__cta {
+      order: 3;
+      margin-left: clamp(6px, 1vw, 18px);
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+  }
+</style>

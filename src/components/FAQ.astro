@@ -1,0 +1,565 @@
+<section id="preguntas" class="epps-faq">
+  <div class="container">
+
+    <div class="epps-faq__heading">
+      <h2>Preguntas frecuentes</h2>
+    </div>
+
+    <div class="epps-faq__grid">
+
+      <!-- COLUMNA IZQUIERDA -->
+      <div class="epps-faq__column">
+
+        <details class="epps-faq__item">
+          <summary>
+            <span class="epps-faq__icon" aria-hidden="true"></span>
+
+            <span class="epps-faq__question">
+              ¿Se requiere formación previa?
+            </span>
+          </summary>
+
+          <div class="epps-faq__answer">
+            No es excluyente. Abierto a personas interesadas en el campo social,
+            grupal y psicoanalítico.
+          </div>
+        </details>
+
+
+        <details class="epps-faq__item">
+          <summary>
+            <span class="epps-faq__icon" aria-hidden="true"></span>
+
+            <span class="epps-faq__question">
+              ¿Cuáles son los objetos de estudio de la Psicología Social Psicoanalítica?
+            </span>
+          </summary>
+
+          <div class="epps-faq__answer">
+            Se trabajan los sujetos, sus vínculos, los grupos y las instituciones
+            desde una perspectiva psicosocial y psicoanalítica.
+          </div>
+        </details>
+
+      </div>
+
+
+      <!-- COLUMNA DERECHA -->
+      <div class="epps-faq__column">
+
+        <details class="epps-faq__item">
+          <summary>
+            <span class="epps-faq__icon" aria-hidden="true"></span>
+
+            <span class="epps-faq__question">
+              ¿La certificación es oficial?
+            </span>
+          </summary>
+
+          <div class="epps-faq__answer">
+            La propuesta cuenta con certificación institucional y formación
+            orientada al campo profesional.
+          </div>
+        </details>
+
+
+        <details class="epps-faq__item">
+          <summary>
+            <span class="epps-faq__icon" aria-hidden="true"></span>
+
+            <span class="epps-faq__question">
+              ¿Qué habilita la certificación?
+            </span>
+          </summary>
+
+          <div class="epps-faq__answer">
+            Permite acreditar la formación realizada dentro de la propuesta
+            académica de la Escuela.
+          </div>
+        </details>
+
+
+        <details class="epps-faq__item">
+          <summary>
+            <span class="epps-faq__icon" aria-hidden="true"></span>
+
+            <span class="epps-faq__question">
+              Cursé 1° o 2° año en otra escuela, ¿puedo incorporarme? ¿requisitos?
+            </span>
+          </summary>
+
+          <div class="epps-faq__answer">
+            Podés consultar equivalencias y condiciones de ingreso para evaluar
+            tu incorporación según tu recorrido previo.
+          </div>
+        </details>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<style>
+
+  /* =====================================================
+     FAQ
+  ===================================================== */
+
+  .epps-faq {
+    width: 100%;
+    background: var(--color-white);
+    color: var(--color-navy);
+
+    padding-block: clamp(58px, 7vw, 96px);
+  }
+
+
+  /* =====================================================
+     TÍTULO
+  ===================================================== */
+
+  .epps-faq__heading {
+    margin-bottom: clamp(28px, 4vw, 44px);
+    text-align: center;
+  }
+
+  .epps-faq__heading h2 {
+    margin: 0;
+
+    color: var(--color-navy);
+
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+
+    line-height: 1;
+    letter-spacing: -0.04em;
+  }
+
+
+  /* =====================================================
+     GRID
+  ===================================================== */
+
+  .epps-faq__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin-inline: auto;
+
+    gap: 14px;
+  }
+
+  .epps-faq__column {
+    display: grid;
+    align-content: start;
+    gap: 14px;
+  }
+
+
+  /* =====================================================
+     ITEM
+  ===================================================== */
+
+  .epps-faq__item {
+    width: 100%;
+
+    background: var(--color-white);
+
+    border: 1px solid rgba(20, 24, 56, 0.05);
+
+    box-shadow:
+      0 12px 26px rgba(20, 24, 56, 0.09);
+  }
+
+
+  /* =====================================================
+     SUMMARY
+  ===================================================== */
+
+  .epps-faq__item summary {
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    width: 100%;
+
+    gap: 14px;
+
+    min-height: 72px;
+
+    padding: 18px 20px;
+
+    cursor: pointer;
+
+    list-style: none !important;
+
+    text-align: left;
+  }
+
+
+  /* Sacamos marcador nativo */
+
+  .epps-faq__item summary::-webkit-details-marker {
+    display: none !important;
+  }
+
+  .epps-faq__item summary::marker {
+    content: "" !important;
+    display: none !important;
+  }
+
+
+  /* Mata cualquier raya vieja del global */
+
+  .epps-faq__item summary::before {
+    content: none !important;
+    display: none !important;
+  }
+
+
+  /* =====================================================
+     PREGUNTA
+  ===================================================== */
+
+  .epps-faq__question {
+    /*
+      IMPORTANTE:
+      NO usar flex: 1;
+      porque era lo que estaba desplazando el texto.
+    */
+
+    flex: 0 1 auto;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: left;
+
+    color: var(--color-navy);
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(0.88rem, 1.2vw, 0.95rem);
+
+    font-weight: 700;
+
+    line-height: 1.35;
+  }
+
+
+  /* =====================================================
+     ICONO +
+  ===================================================== */
+
+  .epps-faq__icon {
+    position: relative;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    min-width: 18px;
+
+    flex: 0 0 18px;
+
+    margin: 0;
+    padding: 0;
+
+    background: transparent !important;
+  }
+
+
+  /* Línea horizontal */
+
+  .epps-faq__icon::before {
+    content: "" !important;
+
+    position: absolute;
+
+    display: block !important;
+
+    top: 50%;
+    left: 50%;
+
+    width: 14px;
+    height: 2px;
+
+    background: var(--color-red) !important;
+
+    transform: translate(-50%, -50%) !important;
+  }
+
+
+  /* Línea vertical */
+
+  .epps-faq__icon::after {
+    content: "" !important;
+
+    position: absolute;
+
+    display: block !important;
+
+    top: 50%;
+    left: 50%;
+
+    width: 2px;
+    height: 14px;
+
+    background: var(--color-red) !important;
+
+    transform: translate(-50%, -50%) !important;
+  }
+
+
+  /* =====================================================
+     ABIERTO
+
+     El + permanece como +
+  ===================================================== */
+
+  .epps-faq__item[open] .epps-faq__icon::before {
+    transform: translate(-50%, -50%) !important;
+  }
+
+  .epps-faq__item[open] .epps-faq__icon::after {
+    transform: translate(-50%, -50%) !important;
+  }
+
+
+  /* =====================================================
+     RESPUESTA
+  ===================================================== */
+
+  .epps-faq__answer {
+    /*
+      20px padding summary
+      + 18px icono
+      + 14px gap
+      = 52px
+
+      Así empieza debajo del texto,
+      no debajo del +
+    */
+
+    padding:
+      0
+      20px
+      22px
+      52px;
+
+    color: var(--color-text-muted);
+
+    font-family: var(--font-body);
+
+    font-size: clamp(0.88rem, 1.1vw, 0.95rem);
+
+    line-height: 1.58;
+
+    text-align: left;
+  }
+
+
+  /* =====================================================
+     MOBILE
+     320px - 767px
+  ===================================================== */
+
+  @media (min-width: 320px) and (max-width: 767px) {
+
+    .epps-faq {
+      padding:
+        58px
+        0
+        64px;
+    }
+
+
+    .epps-faq__heading {
+      margin-bottom: 28px;
+    }
+
+
+    .epps-faq__heading h2 {
+      font-size: clamp(2rem, 9.3vw, 2.45rem);
+    }
+
+
+    .epps-faq__grid,
+    .epps-faq__column {
+      gap: 12px;
+    }
+
+
+    .epps-faq__item summary {
+      min-height: 72px;
+
+      padding:
+        18px
+        18px;
+
+      gap: 12px;
+    }
+
+
+    .epps-faq__question {
+      font-size: 0.92rem;
+    }
+
+
+    .epps-faq__icon {
+      width: 16px;
+      height: 16px;
+
+      min-width: 16px;
+
+      flex-basis: 16px;
+    }
+
+
+    .epps-faq__icon::before {
+      width: 13px;
+    }
+
+
+    .epps-faq__icon::after {
+      height: 13px;
+    }
+
+
+    .epps-faq__answer {
+      /*
+        18 padding
+        + 16 icono
+        + 12 gap
+        = 46px
+      */
+
+      padding:
+        0
+        18px
+        20px
+        46px;
+
+      font-size: 0.9rem;
+
+      line-height: 1.58;
+    }
+
+  }
+
+
+  /* =====================================================
+     TABLET
+     768px - 1023px
+  ===================================================== */
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+
+    .epps-faq {
+      padding:
+        78px
+        0
+        86px;
+    }
+
+
+    .epps-faq__grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 22px;
+    }
+
+
+    .epps-faq__column {
+      gap: 16px;
+    }
+
+
+    .epps-faq__item summary {
+      min-height: 72px;
+
+      padding:
+        20px
+        20px;
+
+      gap: 14px;
+    }
+
+
+    .epps-faq__answer {
+      padding:
+        0
+        20px
+        22px
+        52px;
+    }
+
+  }
+
+
+  /* =====================================================
+     DESKTOP
+     1024px+
+  ===================================================== */
+
+  @media (min-width: 1024px) {
+
+    .epps-faq {
+      padding:
+        88px
+        0
+        96px;
+    }
+
+
+    .epps-faq__grid {
+      grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+      gap: 28px;
+    }
+
+
+    .epps-faq__column {
+      gap: 16px;
+    }
+
+
+    .epps-faq__item summary {
+      min-height: 72px;
+
+      padding:
+        20px
+        22px;
+
+      gap: 14px;
+    }
+
+
+    .epps-faq__answer {
+      /*
+        22px padding
+        + 18px icono
+        + 14px gap
+        = 54px
+      */
+
+      padding:
+        0
+        22px
+        22px
+        54px;
+    }
+
+  }
+
+</style>
