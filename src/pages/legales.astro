@@ -1,0 +1,461 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Legales | Escuela Psicoanalítica de Psicología Social">
+
+  <main class="legales-page">
+
+    <!-- HERO -->
+    <section class="legales-hero">
+      <div class="legales-hero__inner">
+
+        <img
+          src="/images/logo.svg"
+          alt="EPPS"
+          class="legales-hero__logo"
+        />
+
+        <p class="legales-hero__eyebrow">
+          Escuela Psicoanalítica de Psicología Social
+        </p>
+
+        <h1>Información legal</h1>
+
+        <p class="legales-hero__description">
+          Términos de uso, privacidad y accesibilidad del sitio web
+          de la Escuela Psicoanalítica de Psicología Social.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- CONTENIDO -->
+    <section class="legales-content">
+
+      <!-- 01 -->
+      <article class="legal-block">
+
+        <div class="legal-block__number">
+          01
+        </div>
+
+        <div class="legal-block__content">
+
+          <h2>Términos y Condiciones de Uso</h2>
+
+          <p>
+            El acceso y uso del sitio web de la Escuela Psicoanalítica de
+            Psicología Social (EPPS) implica la aceptación de los presentes
+            Términos y Condiciones.
+          </p>
+
+          <p>
+            Los contenidos publicados en este sitio tienen fines informativos
+            y educativos. La EPPS se reserva el derecho de modificar,
+            actualizar o eliminar contenidos sin previo aviso.
+          </p>
+
+          <p>
+            Los textos, imágenes, materiales audiovisuales y demás contenidos
+            son propiedad de la EPPS o se utilizan con autorización, y no
+            podrán ser reproducidos total o parcialmente sin consentimiento
+            previo.
+          </p>
+
+          <p>
+            La EPPS no se responsabiliza por el uso indebido de la información
+            publicada en el sitio ni por posibles interrupciones o fallas
+            técnicas.
+          </p>
+
+          <p>
+            El uso de este sitio web se rige por la normativa vigente en la
+            República Argentina.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- 02 -->
+      <article class="legal-block">
+
+        <div class="legal-block__number">
+          02
+        </div>
+
+        <div class="legal-block__content">
+
+          <h2>Aviso Legal</h2>
+
+          <p>
+            La Escuela Psicoanalítica de Psicología Social (EPPS) respeta la
+            privacidad de las personas que visitan su sitio web y se compromete
+            a proteger los datos personales que puedan ser proporcionados a
+            través del mismo.
+          </p>
+
+          <p>
+            La información personal recopilada mediante formularios de contacto
+            u otros medios será utilizada exclusivamente con fines
+            institucionales, académicos y de comunicación relacionados con las
+            actividades formativas de la EPPS.
+          </p>
+
+          <p>
+            La EPPS no comparte, vende ni cede datos personales a terceros,
+            salvo cuando sea requerido por obligación legal.
+          </p>
+
+          <p>
+            Las personas usuarias podrán solicitar la actualización,
+            rectificación o eliminación de sus datos personales escribiendo
+            a los canales de contacto institucionales.
+          </p>
+
+          <p>
+            El uso de este sitio web implica la aceptación de esta Política
+            de Privacidad.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- 03 -->
+      <article class="legal-block">
+
+        <div class="legal-block__number">
+          03
+        </div>
+
+        <div class="legal-block__content">
+
+          <h2>Declaración de Accesibilidad</h2>
+
+          <p>
+            La Escuela Psicoanalítica de Psicología Social (EPPS) trabaja para
+            que su sitio web sea accesible para la mayor cantidad de personas
+            posible, promoviendo la inclusión y el acceso equitativo a la
+            información.
+          </p>
+
+          <p>
+            Se realizan esfuerzos para mejorar la navegación, la legibilidad
+            de los contenidos y la compatibilidad con distintos dispositivos
+            y tecnologías de apoyo.
+          </p>
+
+          <p>
+            Si alguna persona encuentra dificultades para acceder a la
+            información del sitio, puede comunicarse a través de los canales
+            de contacto institucionales para recibir asistencia o realizar
+            sugerencias de mejora.
+          </p>
+
+        </div>
+
+      </article>
+
+    </section>
+
+  </main>
+
+</BaseLayout>
+
+
+<style>
+
+  /* ========================================
+     PAGE
+  ======================================== */
+
+  .legales-page {
+    background: var(--color-white, #ffffff);
+    color: var(--color-navy, #071c35);
+  }
+
+
+  /* ========================================
+     HERO
+  ======================================== */
+
+  .legales-hero {
+    position: relative;
+
+    padding: 150px 24px 90px;
+
+    overflow: hidden;
+
+    border-bottom: 1px solid rgba(7, 28, 53, 0.1);
+  }
+
+  .legales-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 450px;
+    height: 450px;
+
+    top: -250px;
+    right: -150px;
+
+    border: 1px solid rgba(36, 87, 214, 0.12);
+    border-radius: 50%;
+
+    pointer-events: none;
+  }
+
+  .legales-hero__inner {
+    width: min(100%, 1180px);
+    margin: 0 auto;
+  }
+
+
+  /* LOGO */
+
+  .legales-hero__logo {
+    display: block;
+
+    width: clamp(75px, 8vw, 105px);
+    height: auto;
+
+    margin-bottom: 30px;
+  }
+
+
+  /* EYEBROW */
+
+  .legales-hero__eyebrow {
+    margin: 0 0 18px;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+
+    color: var(--color-blue, #2457d6);
+  }
+
+
+  /* TITLE */
+
+  .legales-hero h1 {
+    margin: 0;
+
+    max-width: 850px;
+
+    font-family: var(--font-heading, sans-serif);
+
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 700;
+
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+
+    color: var(--color-navy, #071c35);
+  }
+
+
+  /* DESCRIPTION */
+
+  .legales-hero__description {
+    max-width: 620px;
+
+    margin: 30px 0 0;
+
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.7;
+
+    color: #596675;
+  }
+
+
+  /* ========================================
+     CONTENT
+  ======================================== */
+
+  .legales-content {
+    width: min(100% - 48px, 1180px);
+
+    margin: 0 auto;
+
+    padding: 40px 0 120px;
+  }
+
+
+  /* ========================================
+     LEGAL BLOCK
+  ======================================== */
+
+  .legal-block {
+    display: grid;
+
+    grid-template-columns: 100px minmax(0, 760px);
+
+    gap: 55px;
+
+    padding: 70px 0;
+
+    border-bottom: 1px solid rgba(7, 28, 53, 0.12);
+  }
+
+
+  /* NUMBER */
+
+  .legal-block__number {
+    padding-top: 8px;
+
+    font-family: var(--font-heading, sans-serif);
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    letter-spacing: 0.1em;
+
+    color: var(--color-blue, #2457d6);
+  }
+
+
+  /* CONTENT */
+
+  .legal-block__content h2 {
+    margin: 0 0 28px;
+
+    font-family: var(--font-heading, sans-serif);
+
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 700;
+
+    line-height: 1;
+    letter-spacing: -0.04em;
+
+    color: var(--color-navy, #071c35);
+  }
+
+  .legal-block__content p {
+    margin: 0 0 18px;
+
+    font-size: 1rem;
+    line-height: 1.8;
+
+    color: #4f5d6b;
+  }
+
+  .legal-block__content p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ========================================
+     TABLET
+  ======================================== */
+
+  @media (max-width: 768px) {
+
+    .legales-hero {
+      padding:
+        120px
+        24px
+        65px;
+    }
+
+    .legales-hero h1 {
+      font-size: clamp(3.2rem, 12vw, 5rem);
+    }
+
+    .legales-content {
+      width: min(100% - 40px, 1180px);
+
+      padding-bottom: 80px;
+    }
+
+    .legal-block {
+      grid-template-columns: 60px 1fr;
+
+      gap: 25px;
+
+      padding: 55px 0;
+    }
+
+  }
+
+
+  /* ========================================
+     MOBILE
+  ======================================== */
+
+  @media (max-width: 500px) {
+
+    .legales-hero {
+      padding:
+        100px
+        20px
+        55px;
+    }
+
+    .legales-hero__logo {
+      width: 75px;
+
+      margin-bottom: 25px;
+    }
+
+    .legales-hero__eyebrow {
+      max-width: 300px;
+
+      font-size: 0.64rem;
+      line-height: 1.5;
+    }
+
+    .legales-hero h1 {
+      font-size: clamp(3rem, 15vw, 4rem);
+
+      line-height: 0.92;
+    }
+
+    .legales-hero__description {
+      margin-top: 24px;
+
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .legales-content {
+      width: calc(100% - 40px);
+
+      padding-top: 15px;
+    }
+
+    .legal-block {
+      display: block;
+
+      padding: 45px 0;
+    }
+
+    .legal-block__number {
+      margin-bottom: 18px;
+
+      padding: 0;
+    }
+
+    .legal-block__content h2 {
+      margin-bottom: 24px;
+
+      font-size: 2rem;
+      line-height: 1.05;
+    }
+
+    .legal-block__content p {
+      font-size: 0.94rem;
+      line-height: 1.75;
+    }
+
+  }
+
+</style>
