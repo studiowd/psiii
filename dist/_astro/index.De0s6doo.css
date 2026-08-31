@@ -1,0 +1,2411 @@
+.hero[data-astro-cid-ge2uvauf] {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(105deg,
+        #b80000 0%,
+        var(--color-red) 70%,
+        #df0c0c 100%);
+  color: var(--color-white);
+}
+
+.hero__inner[data-astro-cid-ge2uvauf] {
+  display: grid;
+  align-items: center;
+}
+
+.hero__inner[data-astro-cid-ge2uvauf] {
+  min-height: 350px;
+}
+
+.hero__content[data-astro-cid-ge2uvauf] {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 430px;
+  margin-inline: auto;
+  padding: 22px 8px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__mobile-logo[data-astro-cid-ge2uvauf] {
+  display: block;
+  width: 88px;
+  height: auto;
+  margin: 0 0 18px;
+}
+
+.hero__eyebrow[data-astro-cid-ge2uvauf] {
+  margin: 0 0 17px;
+  color: var(--color-yellow);
+  font-family: var(--font-heading);
+  font-size: .54rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: .025em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.hero__title[data-astro-cid-ge2uvauf] {
+  width: 100%;
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  letter-spacing: -.04em;
+  color: var(--color-white);
+}
+
+.hero__title-mobile[data-astro-cid-ge2uvauf] {
+  display: block;
+  width: 100%;
+  font-size: clamp(1.08rem, 5.6vw, 1.32rem);
+  line-height: 1.16;
+}
+
+.hero__title-mobile[data-astro-cid-ge2uvauf] > span[data-astro-cid-ge2uvauf] {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero__title-desktop[data-astro-cid-ge2uvauf] {
+  display: none;
+}
+
+.hero__description[data-astro-cid-ge2uvauf] {
+  width: 100%;
+  margin: 16px 0 0;
+  color: #fffffff7;
+}
+
+.hero__description-mobile[data-astro-cid-ge2uvauf] {
+  display: block;
+  font-size: clamp(.7rem, 3.25vw, .82rem);
+  line-height: 1.27;
+}
+
+.hero__description-mobile[data-astro-cid-ge2uvauf] > span[data-astro-cid-ge2uvauf] {
+  display: block;
+  white-space: nowrap;
+}
+
+.hero__description-desktop[data-astro-cid-ge2uvauf] {
+  display: none;
+}
+
+.hero__cta[data-astro-cid-ge2uvauf] {
+  margin-top: 23px;
+  min-width: 160px;
+  padding: 10px 20px;
+  align-self: center;
+  font-size: .58rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero__visual[data-astro-cid-ge2uvauf] {
+  display: none;
+}
+
+@media (width <= 389px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 350px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    padding: 18px 5px 26px;
+  }
+
+  .hero__mobile-logo[data-astro-cid-ge2uvauf] {
+    width: 78px;
+    margin-bottom: 15px;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    margin-bottom: 15px;
+    font-size: .46rem;
+  }
+
+  .hero__title-mobile[data-astro-cid-ge2uvauf] {
+    font-size: 1.06rem;
+    line-height: 1.17;
+  }
+
+  .hero__description[data-astro-cid-ge2uvauf] {
+    margin-top: 15px;
+  }
+
+  .hero__description-mobile[data-astro-cid-ge2uvauf] {
+    font-size: .69rem;
+    line-height: 1.26;
+  }
+
+  .hero__cta[data-astro-cid-ge2uvauf] {
+    margin-top: 21px;
+    min-width: 150px;
+  }
+}
+
+@media (width >= 390px) and (width <= 430px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 390px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    max-width: 430px;
+    padding: 24px 6px 30px;
+  }
+
+  .hero__mobile-logo[data-astro-cid-ge2uvauf] {
+    width: 92px;
+    margin-bottom: 18px;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    margin-bottom: 17px;
+    font-size: .55rem;
+  }
+
+  .hero__title-mobile[data-astro-cid-ge2uvauf] {
+    font-size: 1.3rem;
+    line-height: 1.15;
+  }
+
+  .hero__description[data-astro-cid-ge2uvauf] {
+    margin-top: 17px;
+  }
+
+  .hero__description-mobile[data-astro-cid-ge2uvauf] {
+    font-size: .81rem;
+    line-height: 1.27;
+  }
+
+  .hero__cta[data-astro-cid-ge2uvauf] {
+    margin-top: 23px;
+    min-width: 160px;
+  }
+}
+
+@media (width >= 431px) and (width <= 767px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 430px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    max-width: 540px;
+    padding-block: 36px;
+  }
+
+  .hero__mobile-logo[data-astro-cid-ge2uvauf] {
+    width: 105px;
+    margin-bottom: 20px;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    font-size: .62rem;
+  }
+
+  .hero__title-mobile[data-astro-cid-ge2uvauf] {
+    font-size: 1.5rem;
+  }
+
+  .hero__description-mobile[data-astro-cid-ge2uvauf] {
+    font-size: .88rem;
+  }
+
+  .hero__cta[data-astro-cid-ge2uvauf] {
+    margin-top: 26px;
+    min-width: 180px;
+  }
+}
+
+@media (width >= 768px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 430px;
+    grid-template-columns: minmax(0, 1.35fr) minmax(260px, .65fr);
+    gap: 36px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    width: 100%;
+    max-width: 680px;
+    margin: 0;
+    padding: 50px 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .hero__mobile-logo[data-astro-cid-ge2uvauf] {
+    display: none;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    margin-bottom: 28px;
+    font-size: .7rem;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .hero__title-mobile[data-astro-cid-ge2uvauf] {
+    display: none;
+  }
+
+  .hero__title-desktop[data-astro-cid-ge2uvauf] {
+    display: block;
+    width: 100%;
+    font-size: clamp(2rem, 3.4vw, 2.45rem);
+    line-height: 1.06;
+  }
+
+  .hero__title-desktop[data-astro-cid-ge2uvauf] > span[data-astro-cid-ge2uvauf] {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .hero__description-mobile[data-astro-cid-ge2uvauf] {
+    display: none;
+  }
+
+  .hero__description-desktop[data-astro-cid-ge2uvauf] {
+    display: block;
+    margin-top: 0;
+    font-size: .9rem;
+    line-height: 1.35;
+  }
+
+  .hero__description-desktop[data-astro-cid-ge2uvauf] > span[data-astro-cid-ge2uvauf] {
+    display: block;
+    white-space: nowrap;
+  }
+
+  .hero__description[data-astro-cid-ge2uvauf] {
+    max-width: 620px;
+    margin-top: 14px;
+    text-align: left;
+  }
+
+  .hero__cta[data-astro-cid-ge2uvauf] {
+    margin-top: 28px;
+    min-width: 200px;
+    align-self: flex-start;
+    font-size: .7rem;
+  }
+
+  .hero__visual[data-astro-cid-ge2uvauf] {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .hero__visual-logo[data-astro-cid-ge2uvauf] {
+    display: block;
+    width: clamp(250px, 31vw, 340px);
+    max-width: none;
+    height: auto;
+  }
+}
+
+@media (width >= 1024px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 470px;
+    grid-template-columns: minmax(0, 1.3fr) minmax(340px, .7fr);
+    gap: 46px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    max-width: 740px;
+    padding-block: 58px;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    margin-bottom: 32px;
+    font-size: .78rem;
+  }
+
+  .hero__title-desktop[data-astro-cid-ge2uvauf] {
+    font-size: clamp(2.15rem, 2.75vw, 2.65rem);
+    line-height: 1.04;
+  }
+
+  .hero__description[data-astro-cid-ge2uvauf] {
+    margin-top: 16px;
+  }
+
+  .hero__description-desktop[data-astro-cid-ge2uvauf] {
+    font-size: 1rem;
+    line-height: 1.38;
+  }
+
+  .hero__cta[data-astro-cid-ge2uvauf] {
+    margin-top: 30px;
+    min-width: 220px;
+    font-size: .72rem;
+  }
+
+  .hero__visual-logo[data-astro-cid-ge2uvauf] {
+    width: clamp(320px, 32vw, 390px);
+  }
+}
+
+@media (width >= 1280px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 440px;
+    grid-template-columns: minmax(0, 1.35fr) 420px;
+    gap: 40px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    max-width: 760px;
+    padding-block: 50px;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    margin-bottom: 30px;
+    font-size: .82rem;
+  }
+
+  .hero__title-desktop[data-astro-cid-ge2uvauf] {
+    font-size: 2.55rem;
+    line-height: 1.03;
+  }
+
+  .hero__description-desktop[data-astro-cid-ge2uvauf] {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  .hero__visual-logo[data-astro-cid-ge2uvauf] {
+    width: 390px;
+  }
+}
+
+@media (width >= 1440px) {
+  .hero__inner[data-astro-cid-ge2uvauf] {
+    min-height: 435px;
+    grid-template-columns: minmax(0, 1fr) 460px;
+    gap: 44px;
+  }
+
+  .hero__content[data-astro-cid-ge2uvauf] {
+    max-width: 780px;
+    padding-block: 48px;
+  }
+
+  .hero__eyebrow[data-astro-cid-ge2uvauf] {
+    margin-bottom: 30px;
+    font-size: .84rem;
+  }
+
+  .hero__title-desktop[data-astro-cid-ge2uvauf] {
+    font-size: 2.65rem;
+    line-height: 1.02;
+  }
+
+  .hero__description[data-astro-cid-ge2uvauf] {
+    margin-top: 16px;
+  }
+
+  .hero__description-desktop[data-astro-cid-ge2uvauf] {
+    font-size: 1.02rem;
+    line-height: 1.38;
+  }
+
+  .hero__cta[data-astro-cid-ge2uvauf] {
+    margin-top: 30px;
+  }
+
+  .hero__visual-logo[data-astro-cid-ge2uvauf] {
+    width: 420px;
+  }
+}
+section[data-astro-cid-23gkgyqt].stats {
+  padding-left: 0;
+}
+
+.stats[data-astro-cid-23gkgyqt] {
+  background: var(--color-white);
+  padding-block: clamp(34px, 5vw, 58px);
+}
+
+.stats-grid[data-astro-cid-23gkgyqt] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 5vw, 42px) clamp(16px, 4vw, 34px);
+}
+
+.stat[data-astro-cid-23gkgyqt] {
+  position: relative;
+  min-width: 0;
+  padding-left: clamp(14px, 3vw, 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--color-navy);
+}
+
+.stat[data-astro-cid-23gkgyqt]:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--color-red);
+}
+
+.stat[data-astro-cid-23gkgyqt] strong[data-astro-cid-23gkgyqt] {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 8.5vw, 3rem);
+  line-height: .88;
+  letter-spacing: -.05em;
+  font-weight: 800;
+}
+
+.stat[data-astro-cid-23gkgyqt] span[data-astro-cid-23gkgyqt] {
+  margin-top: clamp(7px, 1.4vw, 10px);
+  font-family: var(--font-heading);
+  font-size: clamp(.64rem, 2.4vw, .82rem);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  section[data-astro-cid-23gkgyqt].stats {
+    padding-left: 10vw;
+  }
+}
+
+@media (width >= 768px) {
+  section[data-astro-cid-23gkgyqt].stats {
+    padding-left: 3vw;
+  }
+
+  .stats-grid[data-astro-cid-23gkgyqt] {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .stat[data-astro-cid-23gkgyqt] {
+    min-height: clamp(92px, 10vw, 126px);
+    padding-left: clamp(28px, 3vw, 48px);
+  }
+
+  .stat[data-astro-cid-23gkgyqt] strong[data-astro-cid-23gkgyqt] {
+    font-size: clamp(2.5rem, 3.7vw, 3.35rem);
+  }
+
+  .stat[data-astro-cid-23gkgyqt] span[data-astro-cid-23gkgyqt] {
+    font-size: clamp(.72rem, .9vw, .88rem);
+  }
+
+  .stat[data-astro-cid-23gkgyqt]:first-child:before {
+    display: none;
+  }
+}
+
+@media (width >= 1024px) {
+  section[data-astro-cid-23gkgyqt].stats {
+    padding-left: 5vw;
+  }
+}
+.programs[data-astro-cid-wbcvwyly] {
+  background: var(--color-navy-secondary);
+  color: var(--color-white);
+  padding-block: clamp(62px, 7vw, 112px);
+  overflow: hidden;
+}
+
+.programs__inner[data-astro-cid-wbcvwyly] {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.programs__heading[data-astro-cid-wbcvwyly] {
+  width: 100%;
+  max-width: 820px;
+  margin: 0 auto clamp(38px, 5vw, 68px);
+  text-align: center;
+}
+
+.programs__heading[data-astro-cid-wbcvwyly] .eyebrow[data-astro-cid-wbcvwyly] {
+  margin-bottom: clamp(12px, 1.5vw, 20px);
+  color: var(--color-red);
+}
+
+.programs__heading[data-astro-cid-wbcvwyly] h2[data-astro-cid-wbcvwyly] {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.2vw, 3.4rem);
+  line-height: .98;
+  letter-spacing: -.04em;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.programs__lead[data-astro-cid-wbcvwyly] {
+  width: 100%;
+  max-width: 760px;
+  margin: clamp(18px, 2vw, 26px) auto 0;
+  color: #fffffff5;
+  font-size: clamp(.88rem, 1.15vw, 1.05rem);
+  line-height: 1.48;
+}
+
+.programs-grid[data-astro-cid-wbcvwyly] {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 354px;
+  margin-inline: auto;
+  gap: clamp(28px, 8vw, 38px);
+}
+
+.program-card[data-astro-cid-wbcvwyly] {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(28px, 3vw, 46px) clamp(22px, 2.7vw, 34px) clamp(26px, 2.8vw, 36px);
+  background: var(--color-white);
+  color: var(--color-navy);
+  border-radius: clamp(48px, 6vw, 72px) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.program-card[data-astro-cid-wbcvwyly] h3[data-astro-cid-wbcvwyly] {
+  margin: 0;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 2.15vw, 1.7rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.035em;
+  text-transform: uppercase;
+}
+
+.program-card[data-astro-cid-wbcvwyly] p[data-astro-cid-wbcvwyly] {
+  margin: clamp(14px, 2vw, 24px) 0 0;
+  color: var(--color-navy);
+  font-size: clamp(.88rem, 1.1vw, .98rem);
+  line-height: 1.48;
+}
+
+.program-card__link[data-astro-cid-wbcvwyly] {
+  align-self: flex-start;
+  margin-top: clamp(26px, 3vw, 34px);
+  padding: clamp(10px, 1vw, 12px) clamp(14px, 1.4vw, 18px);
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: clamp(.58rem, .72vw, .7rem);
+  line-height: 1;
+  letter-spacing: .04em;
+  font-weight: 800;
+  text-transform: uppercase;
+  box-shadow: 0 5px 12px #00000026;
+  transition: transform .2s, background-color .2s;
+}
+
+.program-card__link[data-astro-cid-wbcvwyly]:hover {
+  transform: translateY(-2px);
+  background: var(--color-red-hover);
+}
+
+.program-image[data-astro-cid-wbcvwyly] {
+  width: 100%;
+  overflow: hidden;
+  border-radius: clamp(48px, 6vw, 72px) 0;
+}
+
+.program-image[data-astro-cid-wbcvwyly] img[data-astro-cid-wbcvwyly] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 0;
+  padding: 0;
+}
+
+.programs__classes-cta[data-astro-cid-wbcvwyly] {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(30px, 4vw, 52px);
+}
+
+.programs__classes-button[data-astro-cid-wbcvwyly] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(38px, 4vw, 46px);
+  padding: 10px clamp(18px, 2vw, 24px);
+  border-radius: 999px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: clamp(.58rem, .8vw, .72rem);
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  transition: transform .2s, background-color .2s;
+}
+
+.programs__classes-button[data-astro-cid-wbcvwyly]:hover {
+  transform: translateY(-2px);
+  background: var(--color-red-hover);
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .programs-grid[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    max-width: 354px;
+    grid-template-columns: 1fr;
+    gap: clamp(28px, 8vw, 38px);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly], .program-image[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    max-width: 354px;
+    margin-inline: auto;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] {
+    min-height: auto;
+  }
+
+  .program-image[data-astro-cid-wbcvwyly] {
+    height: clamp(300px, 90vw, 354px);
+  }
+}
+
+@media (width >= 768px) and (width <= 1023px) {
+  .programs-grid[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(16px, 2vw, 24px);
+    align-items: stretch;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly], .program-image[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    min-width: 0;
+    height: clamp(330px, 42vw, 390px);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] {
+    padding: clamp(22px, 2.8vw, 30px) clamp(16px, 2vw, 22px) clamp(22px, 2.5vw, 28px);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] h3[data-astro-cid-wbcvwyly] {
+    font-size: clamp(1rem, 2.1vw, 1.3rem);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] p[data-astro-cid-wbcvwyly] {
+    font-size: clamp(.72rem, 1.4vw, .86rem);
+  }
+
+  .program-image[data-astro-cid-wbcvwyly] img[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (width >= 1024px) and (width <= 1279px) {
+  .programs-grid[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(24px, 2.5vw, 30px);
+    align-items: stretch;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly], .program-image[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    min-width: 0;
+    height: clamp(390px, 34vw, 420px);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] {
+    padding: clamp(30px, 3vw, 40px) clamp(24px, 2.5vw, 30px) clamp(28px, 2.8vw, 34px);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] h3[data-astro-cid-wbcvwyly] {
+    font-size: clamp(1.45rem, 2vw, 1.7rem);
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] p[data-astro-cid-wbcvwyly] {
+    font-size: clamp(.85rem, 1vw, .98rem);
+  }
+
+  .program-image[data-astro-cid-wbcvwyly] img[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+@media (width >= 1280px) {
+  .programs__inner[data-astro-cid-wbcvwyly] {
+    max-width: 1410px;
+  }
+
+  .programs-grid[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    max-width: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 34px;
+    align-items: stretch;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly], .program-image[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    min-width: 0;
+    height: 410px;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] {
+    padding: 46px 34px 34px;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] h3[data-astro-cid-wbcvwyly] {
+    font-size: 1.9rem;
+  }
+
+  .program-card[data-astro-cid-wbcvwyly] p[data-astro-cid-wbcvwyly] {
+    font-size: .98rem;
+  }
+
+  .program-image[data-astro-cid-wbcvwyly] img[data-astro-cid-wbcvwyly] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.epps-modalities[data-astro-cid-pfydmz23] {
+  width: 100%;
+  background: var(--color-white);
+  padding: clamp(46px, 4.5vw, 72px) 0;
+}
+
+.epps-modalities__inner[data-astro-cid-pfydmz23] {
+  width: 100%;
+  display: grid;
+  align-items: center;
+}
+
+.epps-modalities__intro[data-astro-cid-pfydmz23] {
+  margin: 0;
+}
+
+.epps-modalities__intro[data-astro-cid-pfydmz23] h2[data-astro-cid-pfydmz23] {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 3vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1.02;
+  letter-spacing: -.035em;
+  color: var(--color-red);
+  text-transform: none;
+}
+
+.epps-modalities__intro[data-astro-cid-pfydmz23] p[data-astro-cid-pfydmz23] {
+  margin: clamp(18px, 1.6vw, 24px) 0 0;
+  font-family: var(--font-body);
+  font-size: clamp(17px, 1.3vw, 20px);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--color-navy);
+}
+
+.epps-modalities__grid[data-astro-cid-pfydmz23] {
+  display: grid;
+  width: 100%;
+  align-items: start;
+}
+
+.epps-modality[data-astro-cid-pfydmz23] {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+.epps-modality[data-astro-cid-pfydmz23] h3[data-astro-cid-pfydmz23] {
+  margin: clamp(14px, 1.2vw, 18px) 0 0;
+  padding: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 800;
+  line-height: 1.18;
+  letter-spacing: -.02em;
+  color: var(--color-navy);
+}
+
+.epps-modality__icon[data-astro-cid-pfydmz23] {
+  width: clamp(58px, 5vw, 74px);
+  height: clamp(58px, 5vw, 74px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  transition: transform var(--transition-normal);
+}
+
+.epps-modality__icon[data-astro-cid-pfydmz23] img[data-astro-cid-pfydmz23] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (hover: hover) {
+  .epps-modality[data-astro-cid-pfydmz23]:hover .epps-modality__icon[data-astro-cid-pfydmz23] {
+    transform: translateY(-4px);
+  }
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .epps-modalities[data-astro-cid-pfydmz23] {
+    padding: 42px 0 68px;
+  }
+
+  .epps-modalities__inner[data-astro-cid-pfydmz23] {
+    grid-template-columns: 1fr;
+    gap: 58px;
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] h2[data-astro-cid-pfydmz23] {
+    display: block;
+    padding-bottom: 10px;
+    font-size: clamp(28px, 8vw, 34px);
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] p[data-astro-cid-pfydmz23] {
+    margin: 0 auto;
+    max-width: 350px;
+    font-size: clamp(16px, 4.3vw, 17px);
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .epps-modalities__grid[data-astro-cid-pfydmz23] {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .epps-modality[data-astro-cid-pfydmz23] {
+    background: none !important;
+  }
+
+  .epps-modality__icon[data-astro-cid-pfydmz23] {
+    width: 64px;
+    height: 64px;
+  }
+
+  .epps-modality[data-astro-cid-pfydmz23] h3[data-astro-cid-pfydmz23] {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+}
+
+@media (width >= 768px) and (width <= 1023px) {
+  .epps-modalities__inner[data-astro-cid-pfydmz23] {
+    width: calc(100% - 64px);
+    max-width: 900px;
+    margin-inline: auto;
+    grid-template-columns: minmax(200px, .85fr) minmax(0, 2fr);
+    gap: clamp(30px, 4vw, 42px);
+    align-items: center;
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] {
+    width: 100%;
+    max-width: 250px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] h2[data-astro-cid-pfydmz23] {
+    font-size: clamp(24px, 3vw, 30px);
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] p[data-astro-cid-pfydmz23] {
+    font-size: clamp(14px, 1.8vw, 18px);
+  }
+
+  .epps-modalities__grid[data-astro-cid-pfydmz23] {
+    width: 100%;
+    max-width: 580px;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(18px, 3vw, 30px);
+    align-items: start;
+  }
+
+  .epps-modality__icon[data-astro-cid-pfydmz23] {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (width >= 1024px) {
+  .epps-modalities[data-astro-cid-pfydmz23] {
+    padding: clamp(58px, 5vw, 72px) 0;
+    margin-inline: auto;
+    max-width: 1410px;
+  }
+
+  .epps-modalities__inner[data-astro-cid-pfydmz23] {
+    grid-template-columns: minmax(330px, 1.05fr) minmax(0, 2.95fr);
+    gap: clamp(60px, 6vw, 100px);
+    align-items: center;
+  }
+
+  .epps-modalities__intro[data-astro-cid-pfydmz23] {
+    max-width: 340px;
+    padding-top: 15px;
+    text-align: left;
+  }
+
+  .epps-modalities__grid[data-astro-cid-pfydmz23] {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(70px, 8vw, 150px);
+    align-items: start;
+  }
+
+  .epps-modality__icon[data-astro-cid-pfydmz23] {
+    width: clamp(60px, 4vw, 72px);
+    height: clamp(60px, 4vw, 72px);
+  }
+
+  .epps-modality[data-astro-cid-pfydmz23] h3[data-astro-cid-pfydmz23] {
+    margin-top: 16px;
+    font-size: clamp(14px, 1vw, 16px);
+  }
+}
+
+@media (width >= 1280px) {
+  .epps-modalities__inner[data-astro-cid-pfydmz23] {
+    grid-template-columns: 400px minmax(0, 1fr);
+    gap: clamp(80px, 7vw, 120px);
+  }
+
+  .epps-modalities__grid[data-astro-cid-pfydmz23] {
+    gap: clamp(100px, 5vw, 160px);
+  }
+}
+.manifesto[data-astro-cid-nnfqu5h2] {
+  background: linear-gradient(105deg,
+        var(--color-navy-secondary) 0%,
+        #2e3c9c 100%);
+  color: var(--color-white);
+  padding-block: 58px;
+}
+
+.manifesto__inner[data-astro-cid-nnfqu5h2] {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 0;
+}
+
+.manifesto__title[data-astro-cid-nnfqu5h2] h2[data-astro-cid-nnfqu5h2] {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(2.8rem, 12vw, 4rem);
+  line-height: .92;
+  letter-spacing: -.055em;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.manifesto__m[data-astro-cid-nnfqu5h2] {
+  color: var(--color-red);
+}
+
+.manifesto__rest[data-astro-cid-nnfqu5h2] {
+  color: var(--color-white);
+  letter-spacing: 3px;
+}
+
+.manifesto__lead[data-astro-cid-nnfqu5h2] {
+  margin: 24px 0 0;
+  max-width: 580px;
+  font-size: clamp(1rem, 4.2vw, 1.25rem);
+  line-height: 1.48;
+  font-weight: 400;
+  color: #fffffff5;
+}
+
+.manifesto__copy[data-astro-cid-nnfqu5h2] {
+  margin-top: 34px;
+  max-width: 620px;
+}
+
+.manifesto__copy[data-astro-cid-nnfqu5h2] p[data-astro-cid-nnfqu5h2] {
+  margin: 0;
+  font-size: clamp(.98rem, 4vw, 1.12rem);
+  line-height: 1.58;
+  font-weight: 400;
+  color: #fffffff5;
+}
+
+.manifesto__copy[data-astro-cid-nnfqu5h2] strong[data-astro-cid-nnfqu5h2] {
+  font-weight: 800;
+  color: var(--color-white);
+}
+
+.manifesto__details[data-astro-cid-nnfqu5h2] {
+  margin-top: 34px;
+}
+
+.manifesto__details[data-astro-cid-nnfqu5h2] ul[data-astro-cid-nnfqu5h2] {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.manifesto__details[data-astro-cid-nnfqu5h2] li[data-astro-cid-nnfqu5h2] {
+  position: relative;
+  padding-left: 18px;
+  font-size: clamp(.95rem, 3.8vw, 1.08rem);
+  line-height: 1.5;
+  color: #fffffff5;
+}
+
+.manifesto__details[data-astro-cid-nnfqu5h2] li[data-astro-cid-nnfqu5h2]:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-white);
+}
+
+.manifesto__button[data-astro-cid-nnfqu5h2] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-width: 145px;
+  min-height: 44px;
+  margin-top: 28px;
+  padding: 13px 26px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: .78rem;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: transform .2s, background-color .2s;
+}
+
+.manifesto__button[data-astro-cid-nnfqu5h2]:hover {
+  transform: translateY(-2px);
+  background: var(--color-red-hover);
+}
+
+@media (width <= 430px) {
+  .manifesto[data-astro-cid-nnfqu5h2] {
+    padding-block: 52px 58px;
+  }
+
+  .manifesto__title[data-astro-cid-nnfqu5h2] h2[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(2.7rem, 12vw, 3.25rem);
+    line-height: .95;
+  }
+
+  .manifesto__lead[data-astro-cid-nnfqu5h2] {
+    margin-top: 22px;
+    font-size: clamp(1rem, 4.25vw, 1.12rem);
+    line-height: 1.48;
+  }
+
+  .manifesto__copy[data-astro-cid-nnfqu5h2] {
+    margin-top: 32px;
+  }
+
+  .manifesto__copy[data-astro-cid-nnfqu5h2] p[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(.95rem, 4vw, 1.05rem);
+    line-height: 1.58;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] {
+    margin-top: 32px;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] ul[data-astro-cid-nnfqu5h2] {
+    gap: 13px;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] li[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(.93rem, 3.8vw, 1.02rem);
+    line-height: 1.52;
+  }
+
+  .manifesto__button[data-astro-cid-nnfqu5h2] {
+    min-width: 145px;
+    min-height: 44px;
+    margin-top: 26px;
+  }
+}
+
+@media (width >= 768px) {
+  .manifesto[data-astro-cid-nnfqu5h2] {
+    padding-block: 72px;
+  }
+
+  .manifesto__inner[data-astro-cid-nnfqu5h2] {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    column-gap: clamp(40px, 6vw, 70px);
+    row-gap: 38px;
+  }
+
+  .manifesto__title[data-astro-cid-nnfqu5h2] {
+    grid-column: 1;
+  }
+
+  .manifesto__copy[data-astro-cid-nnfqu5h2] {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] {
+    grid-column: 2;
+    margin-top: 0;
+  }
+
+  .manifesto__title[data-astro-cid-nnfqu5h2] h2[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(3rem, 6vw, 4rem);
+  }
+
+  .manifesto__lead[data-astro-cid-nnfqu5h2] {
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .manifesto__copy[data-astro-cid-nnfqu5h2] p[data-astro-cid-nnfqu5h2] {
+    font-size: .95rem;
+    line-height: 1.55;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] li[data-astro-cid-nnfqu5h2] {
+    font-size: .95rem;
+    line-height: 1.5;
+  }
+}
+
+@media (width >= 1024px) {
+  .manifesto[data-astro-cid-nnfqu5h2] {
+    padding-block: 72px 76px;
+  }
+
+  .manifesto__inner[data-astro-cid-nnfqu5h2] {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.15fr) minmax(0, .9fr);
+    gap: clamp(40px, 4vw, 70px);
+    align-items: start;
+  }
+
+  .manifesto__title[data-astro-cid-nnfqu5h2], .manifesto__copy[data-astro-cid-nnfqu5h2], .manifesto__details[data-astro-cid-nnfqu5h2] {
+    grid-column: auto;
+    margin-top: 0;
+  }
+
+  .manifesto__title[data-astro-cid-nnfqu5h2] h2[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(3rem, 4vw, 4.3rem);
+  }
+
+  .manifesto__lead[data-astro-cid-nnfqu5h2] {
+    margin-top: 20px;
+    max-width: 390px;
+    font-size: clamp(.9rem, .9vw, 1rem);
+    line-height: 1.5;
+  }
+
+  .manifesto__copy[data-astro-cid-nnfqu5h2] {
+    max-width: 460px;
+  }
+
+  .manifesto__copy[data-astro-cid-nnfqu5h2] p[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(.86rem, .8vw, .95rem);
+    line-height: 1.55;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] ul[data-astro-cid-nnfqu5h2] {
+    gap: 10px;
+  }
+
+  .manifesto__details[data-astro-cid-nnfqu5h2] li[data-astro-cid-nnfqu5h2] {
+    font-size: clamp(.84rem, .78vw, .92rem);
+    line-height: 1.5;
+  }
+
+  .manifesto__button[data-astro-cid-nnfqu5h2] {
+    margin-top: 22px;
+  }
+}
+
+@media (width >= 1280px) {
+  .manifesto__inner[data-astro-cid-nnfqu5h2] {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.15fr) minmax(0, .9fr);
+    gap: 58px;
+  }
+
+  .manifesto__title[data-astro-cid-nnfqu5h2] h2[data-astro-cid-nnfqu5h2] {
+    font-size: 4rem;
+  }
+}
+.about[data-astro-cid-oxgmilyn] {
+  background: var(--color-red);
+  color: var(--color-white);
+  padding: 58px 0 64px;
+}
+
+.about-grid[data-astro-cid-oxgmilyn] {
+  display: grid;
+  gap: 34px;
+}
+
+.about-media[data-astro-cid-oxgmilyn] {
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1.16;
+}
+
+.about-media[data-astro-cid-oxgmilyn] img[data-astro-cid-oxgmilyn] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about-video[data-astro-cid-oxgmilyn] {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background-color: #000;
+}
+
+.about-heading[data-astro-cid-oxgmilyn] h2[data-astro-cid-oxgmilyn] {
+  margin: 0;
+  color: var(--color-white);
+  font-size: clamp(2rem, 9vw, 2.8rem);
+  line-height: .98;
+  font-weight: 800;
+  letter-spacing: -.035em;
+}
+
+.about-heading[data-astro-cid-oxgmilyn] > p[data-astro-cid-oxgmilyn] {
+  margin-top: 7px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.about-copy[data-astro-cid-oxgmilyn] {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.about-copy[data-astro-cid-oxgmilyn] > div[data-astro-cid-oxgmilyn] {
+  display: grid;
+  gap: 14px;
+}
+
+.about-copy[data-astro-cid-oxgmilyn] p[data-astro-cid-oxgmilyn] {
+  font-size: .94rem;
+  line-height: 1.55;
+}
+
+.about-copy[data-astro-cid-oxgmilyn] strong[data-astro-cid-oxgmilyn] {
+  font-weight: 800;
+}
+
+@media (width <= 430px) {
+  .about[data-astro-cid-oxgmilyn] {
+    padding: 54px 0 60px;
+  }
+
+  .about-grid[data-astro-cid-oxgmilyn] {
+    gap: 28px;
+    text-align: center;
+  }
+
+  .about-media[data-astro-cid-oxgmilyn] {
+    width: min(100%, 350px);
+    margin-inline: auto;
+    aspect-ratio: 1.2;
+  }
+
+  .about-heading[data-astro-cid-oxgmilyn] {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .about-heading[data-astro-cid-oxgmilyn] h2[data-astro-cid-oxgmilyn] {
+    font-size: clamp(2.05rem, 9.5vw, 2.55rem);
+  }
+
+  .about-heading[data-astro-cid-oxgmilyn] > p[data-astro-cid-oxgmilyn] {
+    margin-top: 5px;
+    font-size: 1.15rem;
+  }
+
+  .about-copy[data-astro-cid-oxgmilyn] {
+    max-width: 355px;
+    margin: 22px auto 0;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .about-copy[data-astro-cid-oxgmilyn] > div[data-astro-cid-oxgmilyn] {
+    gap: 12px;
+    text-align: center;
+  }
+
+  .about-copy[data-astro-cid-oxgmilyn] p[data-astro-cid-oxgmilyn] {
+    font-size: .96rem;
+    line-height: 1.58;
+  }
+}
+
+@media (width >= 768px) {
+  .about[data-astro-cid-oxgmilyn] {
+    padding: 76px 0;
+  }
+
+  .about-grid[data-astro-cid-oxgmilyn] {
+    grid-template-columns: minmax(260px, .72fr) 1.45fr;
+    align-items: center;
+    gap: 42px;
+  }
+
+  .about-copy[data-astro-cid-oxgmilyn] {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (width >= 1024px) {
+  .about[data-astro-cid-oxgmilyn] {
+    padding: 102px 0;
+  }
+
+  .about-grid[data-astro-cid-oxgmilyn] {
+    grid-template-columns: 420px 1fr;
+    gap: 54px;
+  }
+
+  .about-media[data-astro-cid-oxgmilyn] {
+    aspect-ratio: 1.16;
+  }
+
+  .about-heading[data-astro-cid-oxgmilyn] h2[data-astro-cid-oxgmilyn] {
+    font-size: clamp(2.6rem, 3.4vw, 3.55rem);
+  }
+
+  .about-heading[data-astro-cid-oxgmilyn] > p[data-astro-cid-oxgmilyn] {
+    font-size: 1.7rem;
+  }
+
+  .about-copy[data-astro-cid-oxgmilyn] {
+    margin-top: 42px;
+    gap: 48px;
+  }
+
+  .about-copy[data-astro-cid-oxgmilyn] p[data-astro-cid-oxgmilyn] {
+    font-size: 1rem;
+    line-height: 1.45;
+  }
+}
+.epps-classes[data-astro-cid-5rcjspot] {
+  background: var(--color-white);
+  color: var(--color-navy);
+  padding: 58px 0 64px;
+  text-align: center;
+}
+
+.epps-classes__inner[data-astro-cid-5rcjspot] {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.epps-classes__copy[data-astro-cid-5rcjspot] {
+  width: 100%;
+  max-width: 390px;
+  margin-inline: auto;
+}
+
+.epps-classes__copy[data-astro-cid-5rcjspot] p[data-astro-cid-5rcjspot], .epps-classes__copy[data-astro-cid-5rcjspot] strong[data-astro-cid-5rcjspot] {
+  font-family: var(--font-heading);
+  letter-spacing: -.025em;
+}
+
+.epps-classes__copy[data-astro-cid-5rcjspot] p[data-astro-cid-5rcjspot] {
+  margin: 0 0 4px;
+  font-size: clamp(1.05rem, 5vw, 1.3rem);
+  line-height: 1.25;
+  font-weight: 600;
+}
+
+.epps-classes__copy[data-astro-cid-5rcjspot] strong[data-astro-cid-5rcjspot] {
+  display: block;
+  font-size: clamp(1.05rem, 5vw, 1.3rem);
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.epps-classes__action[data-astro-cid-5rcjspot] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.epps-classes__button[data-astro-cid-5rcjspot] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 50px;
+  padding: 10px 26px;
+  border-radius: 999px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: .8rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: transform .2s, background-color .2s;
+}
+
+.epps-classes__button[data-astro-cid-5rcjspot]:hover {
+  background: var(--color-red-hover);
+  transform: translateY(-2px);
+}
+
+.epps-classes__youtube[data-astro-cid-5rcjspot] {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 28px;
+  border-radius: 8px;
+  background: var(--color-white);
+  flex: none;
+}
+
+.epps-classes__youtube[data-astro-cid-5rcjspot] svg[data-astro-cid-5rcjspot] {
+  display: block;
+  width: 24px;
+  height: 24px;
+  fill: var(--color-red);
+}
+
+.epps-classes__youtube[data-astro-cid-5rcjspot] .epps-classes__play[data-astro-cid-5rcjspot] {
+  fill: var(--color-white);
+}
+
+@media (width >= 431px) {
+  .epps-classes[data-astro-cid-5rcjspot] {
+    padding: 64px 0 68px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] {
+    max-width: 520px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] p[data-astro-cid-5rcjspot], .epps-classes__copy[data-astro-cid-5rcjspot] strong[data-astro-cid-5rcjspot] {
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  }
+}
+
+@media (width >= 768px) {
+  .epps-classes[data-astro-cid-5rcjspot] {
+    padding: 76px 0 80px;
+    text-align: left;
+  }
+
+  .epps-classes__inner[data-astro-cid-5rcjspot] {
+    grid-template-columns: minmax(0, 1.45fr) minmax(220px, .55fr);
+    gap: 54px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] {
+    max-width: 620px;
+    margin-inline: 0;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] p[data-astro-cid-5rcjspot], .epps-classes__copy[data-astro-cid-5rcjspot] strong[data-astro-cid-5rcjspot] {
+    font-size: clamp(1.3rem, 2.5vw, 1.65rem);
+    line-height: 1.25;
+  }
+
+  .epps-classes__action[data-astro-cid-5rcjspot] {
+    justify-content: flex-end;
+  }
+}
+
+@media (width >= 1024px) {
+  .epps-classes[data-astro-cid-5rcjspot] {
+    padding: 82px 0 86px;
+  }
+
+  .epps-classes__inner[data-astro-cid-5rcjspot] {
+    grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr);
+    gap: 64px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] {
+    max-width: 650px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] p[data-astro-cid-5rcjspot], .epps-classes__copy[data-astro-cid-5rcjspot] strong[data-astro-cid-5rcjspot] {
+    font-size: clamp(1.55rem, 2.1vw, 1.8rem);
+    line-height: 1.28;
+  }
+
+  .epps-classes__button[data-astro-cid-5rcjspot] {
+    min-width: 238px;
+    min-height: 54px;
+  }
+}
+
+@media (width >= 1200px) {
+  .epps-classes[data-astro-cid-5rcjspot] {
+    padding: 60px 0 65px;
+    text-align: left;
+  }
+
+  .epps-classes__inner[data-astro-cid-5rcjspot] {
+    grid-template-columns: minmax(0, 1.4fr) minmax(280px, .6fr);
+    align-items: center;
+    gap: 70px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] {
+    max-width: 650px;
+    margin-left: 0;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] p[data-astro-cid-5rcjspot] {
+    margin: 0 0 3px;
+    font-size: 1.9rem;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] strong[data-astro-cid-5rcjspot] {
+    display: block;
+    font-size: 1.9rem;
+    line-height: 1.3;
+    font-weight: 800;
+  }
+
+  .epps-classes__action[data-astro-cid-5rcjspot] {
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .epps-classes__button[data-astro-cid-5rcjspot] {
+    min-width: 263px;
+    min-height: 55px;
+  }
+}
+
+@media (width >= 1440px) {
+  .epps-classes__inner[data-astro-cid-5rcjspot] {
+    gap: 84px;
+  }
+
+  .epps-classes__copy[data-astro-cid-5rcjspot] {
+    max-width: 650px;
+  }
+}
+.epps-testimonials[data-astro-cid-gakqr736] {
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--color-navy-secondary), #2e3c9c);
+  color: var(--color-white);
+  padding: 68px 0 72px;
+}
+
+.epps-testimonials__heading[data-astro-cid-gakqr736] {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.epps-testimonials__eyebrow[data-astro-cid-gakqr736] {
+  margin: 0 0 10px;
+  color: var(--color-yellow);
+  font-family: var(--font-heading);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+}
+
+.epps-testimonials__heading[data-astro-cid-gakqr736] h2[data-astro-cid-gakqr736] {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 8vw, 3rem);
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.epps-testimonials__slider[data-astro-cid-gakqr736] {
+  position: relative;
+}
+
+.epps-testimonials__track[data-astro-cid-gakqr736] {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overscroll-behavior-inline: contain;
+  padding: 2px 0 8px;
+}
+
+.epps-testimonials__track[data-astro-cid-gakqr736]::-webkit-scrollbar {
+  display: none;
+}
+
+.epps-testimonial-card[data-astro-cid-gakqr736] {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  min-width: 0;
+  min-height: 390px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 90px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 90px;
+  border-width: 1px;
+  padding: 40px 57px 30px;
+  background: linear-gradient(#1e286e 63.89%, #2e3c9c 107.27%);
+  border-radius: var(--radius-card-alt);
+  backdrop-filter: blur(8px);
+}
+
+.epps-testimonial-card__author[data-astro-cid-gakqr736] h3[data-astro-cid-gakqr736] {
+  margin: 0 0 5px;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  line-height: 1.1;
+}
+
+.epps-testimonial-card__author[data-astro-cid-gakqr736] span[data-astro-cid-gakqr736] {
+  color: #eed570;
+  font-family: var(--font-body);
+  font-size: .78rem;
+}
+
+.epps-testimonial-card[data-astro-cid-gakqr736] > p[data-astro-cid-gakqr736] {
+  margin: 0;
+  color: var(--color-text-light);
+  font-family: var(--font-body);
+  font-size: .94rem;
+  line-height: 1.62;
+}
+
+.epps-testimonial-card[data-astro-cid-gakqr736] > p[data-astro-cid-gakqr736] + p[data-astro-cid-gakqr736] {
+  margin-top: -12px;
+}
+
+.epps-testimonials__arrow[data-astro-cid-gakqr736] {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--color-yellow);
+  color: var(--color-navy);
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1;
+  transform: translateY(-50%);
+  cursor: pointer;
+  box-shadow: 0 8px 22px #0000002e;
+}
+
+.epps-testimonials__arrow--prev[data-astro-cid-gakqr736] {
+  left: -9px;
+}
+
+.epps-testimonials__arrow--next[data-astro-cid-gakqr736] {
+  right: -9px;
+}
+
+.epps-testimonials__arrow[data-astro-cid-gakqr736]:disabled {
+  opacity: .35;
+  cursor: default;
+}
+
+.epps-testimonials__dots[data-astro-cid-gakqr736] {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 26px;
+}
+
+.epps-testimonials__dot[data-astro-cid-gakqr736] {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: #ffffff59;
+  cursor: pointer;
+  transition: width .2s, background-color .2s;
+}
+
+.epps-testimonials__dot[data-astro-cid-gakqr736].is-active {
+  width: 24px;
+  border-radius: 999px;
+  background: var(--color-yellow);
+}
+
+@media (width >= 600px) {
+  .epps-testimonial-card[data-astro-cid-gakqr736] {
+    flex-basis: calc(50% - 8px);
+  }
+}
+
+@media (width >= 900px) {
+  .epps-testimonials[data-astro-cid-gakqr736] {
+    padding: 84px 0 88px;
+  }
+
+  .epps-testimonials__heading[data-astro-cid-gakqr736] {
+    margin-bottom: 42px;
+  }
+
+  .epps-testimonial-card[data-astro-cid-gakqr736] {
+    flex-basis: calc(33.3333% - 10.6667px);
+    min-height: 420px;
+    padding: 30px 26px;
+  }
+
+  .epps-testimonials__arrow--prev[data-astro-cid-gakqr736] {
+    left: -20px;
+  }
+
+  .epps-testimonials__arrow--next[data-astro-cid-gakqr736] {
+    right: -20px;
+  }
+}
+
+@media (width >= 1200px) {
+  .epps-testimonial-card[data-astro-cid-gakqr736] {
+    min-height: 400px;
+  }
+}
+@media (width <= 430px) {
+  .epps-testimonials[data-astro-cid-gakqr736] {
+    padding: 58px 0 64px;
+  }
+
+  .epps-testimonials__heading[data-astro-cid-gakqr736] {
+    margin-bottom: 28px;
+  }
+
+  .epps-testimonials__heading[data-astro-cid-gakqr736] h2[data-astro-cid-gakqr736] {
+    max-width: 340px;
+    font-size: clamp(2rem, 9vw, 2.45rem);
+  }
+
+  .epps-testimonials__track[data-astro-cid-gakqr736] {
+    gap: 12px;
+  }
+
+  .epps-testimonial-card[data-astro-cid-gakqr736] {
+    flex-basis: 100%;
+    min-height: 360px;
+    padding: 26px 22px;
+    gap: 18px;
+  }
+
+  .epps-testimonial-card__author[data-astro-cid-gakqr736] h3[data-astro-cid-gakqr736] {
+    font-size: 1.08rem;
+  }
+
+  .epps-testimonial-card[data-astro-cid-gakqr736] > p[data-astro-cid-gakqr736] {
+    font-size: .91rem;
+    line-height: 1.58;
+  }
+
+  .epps-testimonials__arrow[data-astro-cid-gakqr736] {
+    width: 36px;
+    height: 36px;
+  }
+
+  .epps-testimonials__arrow--prev[data-astro-cid-gakqr736] {
+    left: -7px;
+  }
+
+  .epps-testimonials__arrow--next[data-astro-cid-gakqr736] {
+    right: -7px;
+  }
+
+  .epps-testimonials__dots[data-astro-cid-gakqr736] {
+    margin-top: 22px;
+  }
+}
+.epps-faq[data-astro-cid-7synugci] {
+  width: 100%;
+  background: var(--color-white);
+  color: var(--color-navy);
+  padding-block: clamp(58px, 7vw, 96px);
+}
+
+.epps-faq__heading[data-astro-cid-7synugci] {
+  margin-bottom: clamp(28px, 4vw, 44px);
+  text-align: center;
+}
+
+.epps-faq__heading[data-astro-cid-7synugci] h2[data-astro-cid-7synugci] {
+  margin: 0;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.epps-faq__grid[data-astro-cid-7synugci] {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 1100px;
+  margin-inline: auto;
+  gap: 14px;
+}
+
+.epps-faq__column[data-astro-cid-7synugci] {
+  display: grid;
+  align-content: start;
+  gap: 14px;
+}
+
+.epps-faq__item[data-astro-cid-7synugci] {
+  width: 100%;
+  background: var(--color-white);
+  border: 1px solid #1418380d;
+  box-shadow: 0 12px 26px #14183817;
+}
+
+.epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci] {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 14px;
+  min-height: 72px;
+  padding: 18px 20px;
+  cursor: pointer;
+  text-align: left;
+  list-style: none !important;
+}
+
+.epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci]::-webkit-details-marker {
+  display: none !important;
+}
+
+.epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci]::marker {
+  content: "" !important;
+  display: none !important;
+}
+
+.epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci]:before {
+  content: none !important;
+  display: none !important;
+}
+
+.epps-faq__question[data-astro-cid-7synugci] {
+  flex: 0 auto;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: clamp(.88rem, 1.2vw, .95rem);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.epps-faq__icon[data-astro-cid-7synugci] {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  flex: 0 0 18px;
+  margin: 0;
+  padding: 0;
+  background: none !important;
+}
+
+.epps-faq__icon[data-astro-cid-7synugci]:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  content: "" !important;
+  display: block !important;
+  background: var(--color-red) !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.epps-faq__icon[data-astro-cid-7synugci]:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2px;
+  height: 14px;
+  content: "" !important;
+  display: block !important;
+  background: var(--color-red) !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.epps-faq__item[data-astro-cid-7synugci][open] .epps-faq__icon[data-astro-cid-7synugci]:before {
+  transform: translate(-50%, -50%) !important;
+}
+
+.epps-faq__item[data-astro-cid-7synugci][open] .epps-faq__icon[data-astro-cid-7synugci]:after {
+  transform: translate(-50%, -50%) !important;
+}
+
+.epps-faq__answer[data-astro-cid-7synugci] {
+  padding: 0 20px 22px 52px;
+  color: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: clamp(.88rem, 1.1vw, .95rem);
+  line-height: 1.58;
+  text-align: left;
+}
+
+@media (width >= 320px) and (width <= 767px) {
+  .epps-faq[data-astro-cid-7synugci] {
+    padding: 58px 0 64px;
+  }
+
+  .epps-faq__heading[data-astro-cid-7synugci] {
+    margin-bottom: 28px;
+  }
+
+  .epps-faq__heading[data-astro-cid-7synugci] h2[data-astro-cid-7synugci] {
+    font-size: clamp(2rem, 9.3vw, 2.45rem);
+  }
+
+  .epps-faq__grid[data-astro-cid-7synugci], .epps-faq__column[data-astro-cid-7synugci] {
+    gap: 12px;
+  }
+
+  .epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci] {
+    min-height: 72px;
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .epps-faq__question[data-astro-cid-7synugci] {
+    font-size: .92rem;
+  }
+
+  .epps-faq__icon[data-astro-cid-7synugci] {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    flex-basis: 16px;
+  }
+
+  .epps-faq__icon[data-astro-cid-7synugci]:before {
+    width: 13px;
+  }
+
+  .epps-faq__icon[data-astro-cid-7synugci]:after {
+    height: 13px;
+  }
+
+  .epps-faq__answer[data-astro-cid-7synugci] {
+    padding: 0 18px 20px 46px;
+    font-size: .9rem;
+    line-height: 1.58;
+  }
+}
+
+@media (width >= 768px) and (width <= 1023px) {
+  .epps-faq[data-astro-cid-7synugci] {
+    padding: 78px 0 86px;
+  }
+
+  .epps-faq__grid[data-astro-cid-7synugci] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .epps-faq__column[data-astro-cid-7synugci] {
+    gap: 16px;
+  }
+
+  .epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci] {
+    min-height: 72px;
+    padding: 20px;
+    gap: 14px;
+  }
+
+  .epps-faq__answer[data-astro-cid-7synugci] {
+    padding: 0 20px 22px 52px;
+  }
+}
+
+@media (width >= 1024px) {
+  .epps-faq[data-astro-cid-7synugci] {
+    padding: 88px 0 96px;
+  }
+
+  .epps-faq__grid[data-astro-cid-7synugci] {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+  }
+
+  .epps-faq__column[data-astro-cid-7synugci] {
+    gap: 16px;
+  }
+
+  .epps-faq__item[data-astro-cid-7synugci] summary[data-astro-cid-7synugci] {
+    min-height: 72px;
+    padding: 20px 22px;
+    gap: 14px;
+  }
+
+  .epps-faq__answer[data-astro-cid-7synugci] {
+    padding: 0 22px 22px 54px;
+  }
+}
+.epps-contact[data-astro-cid-he3spzz3] {
+  background: var(--color-red);
+  color: var(--color-white);
+  padding: 64px 0 70px;
+}
+
+.epps-contact__grid[data-astro-cid-he3spzz3] {
+  display: grid;
+  gap: 42px;
+}
+
+.epps-contact__intro[data-astro-cid-he3spzz3] {
+  max-width: 420px;
+}
+
+.epps-contact__intro[data-astro-cid-he3spzz3] h2[data-astro-cid-he3spzz3] {
+  margin: 0 0 16px;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 9vw, 3.4rem);
+  line-height: .95;
+  letter-spacing: -.045em;
+}
+
+.epps-contact__intro[data-astro-cid-he3spzz3] p[data-astro-cid-he3spzz3] {
+  margin: 0;
+  max-width: 330px;
+  font-family: var(--font-body);
+  font-size: .93rem;
+  line-height: 1.55;
+}
+
+.epps-contact__form[data-astro-cid-he3spzz3] {
+  display: grid;
+  gap: 26px;
+}
+
+.epps-contact__fields[data-astro-cid-he3spzz3] {
+  display: grid;
+  gap: 22px;
+}
+
+.epps-contact__field[data-astro-cid-he3spzz3], .epps-contact__message[data-astro-cid-he3spzz3] {
+  display: grid;
+  gap: 7px;
+}
+
+.epps-contact__field[data-astro-cid-he3spzz3] span[data-astro-cid-he3spzz3], .epps-contact__message[data-astro-cid-he3spzz3] span[data-astro-cid-he3spzz3], .epps-contact__options[data-astro-cid-he3spzz3] legend[data-astro-cid-he3spzz3] {
+  font-family: var(--font-heading);
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="text"], .epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="email"], .epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="tel"], .epps-contact[data-astro-cid-he3spzz3] textarea[data-astro-cid-he3spzz3] {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ffffffb8;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  color: var(--color-white);
+  padding: 4px 0 9px;
+  font-family: var(--font-body);
+}
+
+.epps-contact[data-astro-cid-he3spzz3] textarea[data-astro-cid-he3spzz3] {
+  resize: vertical;
+  min-height: 72px;
+}
+
+.epps-contact[data-astro-cid-he3spzz3] textarea[data-astro-cid-he3spzz3]::placeholder {
+  color: #ffffffa6;
+}
+
+.epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3]:focus, .epps-contact[data-astro-cid-he3spzz3] textarea[data-astro-cid-he3spzz3]:focus {
+  border-bottom-color: var(--color-yellow);
+}
+
+.epps-contact__options[data-astro-cid-he3spzz3] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.epps-contact__options[data-astro-cid-he3spzz3] legend[data-astro-cid-he3spzz3] {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.epps-contact__options[data-astro-cid-he3spzz3] label[data-astro-cid-he3spzz3] {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-body);
+  font-size: .72rem;
+  line-height: 1.2;
+}
+
+.epps-contact__options[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="radio"] {
+  accent-color: var(--color-navy-secondary);
+}
+
+.epps-contact__submit-row[data-astro-cid-he3spzz3] {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.epps-contact__submit[data-astro-cid-he3spzz3] {
+  min-width: 132px;
+  min-height: 46px;
+  padding: 11px 24px;
+  border: 0;
+  background: var(--color-navy-secondary);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .04em;
+  cursor: pointer;
+  transition: transform .2s, background-color .2s;
+}
+
+.epps-contact__submit[data-astro-cid-he3spzz3]:hover {
+  background: var(--color-navy);
+  transform: translateY(-2px);
+}
+
+.epps-contact__status[data-astro-cid-he3spzz3] {
+  min-height: 1em;
+  margin: -12px 0 0;
+  font-family: var(--font-body);
+  font-size: .78rem;
+}
+
+@media (width >= 700px) {
+  .epps-contact__fields[data-astro-cid-he3spzz3] {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 34px;
+  }
+}
+
+@media (width >= 900px) {
+  .epps-contact[data-astro-cid-he3spzz3] {
+    padding: 74px 0 80px;
+  }
+
+  .epps-contact__grid[data-astro-cid-he3spzz3] {
+    grid-template-columns: minmax(260px, .72fr) minmax(0, 1.45fr);
+    gap: 74px;
+    align-items: start;
+  }
+
+  .epps-contact__intro[data-astro-cid-he3spzz3] h2[data-astro-cid-he3spzz3] {
+    font-size: clamp(2.6rem, 4vw, 4rem);
+  }
+}
+@media (width <= 430px) {
+  .epps-contact[data-astro-cid-he3spzz3] {
+    padding: 58px 0 66px;
+  }
+
+  .epps-contact__grid[data-astro-cid-he3spzz3] {
+    gap: 36px;
+  }
+
+  .epps-contact__intro[data-astro-cid-he3spzz3] h2[data-astro-cid-he3spzz3] {
+    font-size: clamp(2.3rem, 10vw, 2.8rem);
+  }
+
+  .epps-contact__intro[data-astro-cid-he3spzz3] p[data-astro-cid-he3spzz3] {
+    max-width: 350px;
+    font-size: .92rem;
+  }
+
+  .epps-contact__form[data-astro-cid-he3spzz3] {
+    gap: 30px;
+  }
+
+  .epps-contact__fields[data-astro-cid-he3spzz3] {
+    gap: 25px;
+  }
+
+  .epps-contact__field[data-astro-cid-he3spzz3] span[data-astro-cid-he3spzz3], .epps-contact__message[data-astro-cid-he3spzz3] span[data-astro-cid-he3spzz3], .epps-contact__options[data-astro-cid-he3spzz3] legend[data-astro-cid-he3spzz3] {
+    font-size: .72rem;
+  }
+
+  .epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="text"], .epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="email"], .epps-contact[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="tel"], .epps-contact[data-astro-cid-he3spzz3] textarea[data-astro-cid-he3spzz3] {
+    min-height: 42px;
+    padding-bottom: 11px;
+    font-size: .94rem;
+  }
+
+  .epps-contact__options[data-astro-cid-he3spzz3] {
+    display: grid;
+    gap: 12px;
+  }
+
+  .epps-contact__options[data-astro-cid-he3spzz3] label[data-astro-cid-he3spzz3] {
+    font-size: .78rem;
+  }
+
+  .epps-contact__submit[data-astro-cid-he3spzz3] {
+    min-width: 142px;
+    min-height: 48px;
+  }
+}
+@media (width <= 430px) {
+  .epps-contact__grid[data-astro-cid-he3spzz3] {
+    justify-items: center;
+  }
+
+  .epps-contact__intro[data-astro-cid-he3spzz3] {
+    max-width: 350px;
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .epps-contact__intro[data-astro-cid-he3spzz3] p[data-astro-cid-he3spzz3] {
+    margin-inline: auto;
+  }
+
+  .epps-contact__form[data-astro-cid-he3spzz3] {
+    width: min(100%, 350px);
+    margin-inline: auto;
+  }
+
+  .epps-contact__fields[data-astro-cid-he3spzz3] {
+    width: 100%;
+  }
+
+  .epps-contact__field[data-astro-cid-he3spzz3], .epps-contact__message[data-astro-cid-he3spzz3] {
+    width: 100%;
+  }
+
+  .epps-contact__options[data-astro-cid-he3spzz3] {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 12px;
+  }
+
+  .epps-contact__options[data-astro-cid-he3spzz3] legend[data-astro-cid-he3spzz3] {
+    margin-bottom: 4px;
+    text-align: left;
+  }
+
+  .epps-contact__options[data-astro-cid-he3spzz3] label[data-astro-cid-he3spzz3] {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    align-items: center;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .epps-contact__options[data-astro-cid-he3spzz3] input[data-astro-cid-he3spzz3][type="radio"] {
+    margin: 0;
+  }
+
+  .epps-contact__submit-row[data-astro-cid-he3spzz3] {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .epps-contact__submit[data-astro-cid-he3spzz3] {
+    min-width: 150px;
+  }
+
+  .epps-contact__status[data-astro-cid-he3spzz3] {
+    text-align: center;
+  }
+}

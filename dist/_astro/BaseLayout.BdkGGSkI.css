@@ -1,0 +1,776 @@
+.site-header[data-astro-cid-nen7h5rs] {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--color-white);
+  border-bottom: 1px solid #1418380f;
+}
+
+.site-header__inner[data-astro-cid-nen7h5rs] {
+  min-height: clamp(70px, 7vw, 106px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(12px, 2vw, 28px);
+  position: relative;
+}
+
+.site-logo[data-astro-cid-nen7h5rs] {
+  display: none;
+  align-items: center;
+  gap: 12px;
+  flex: none;
+}
+
+.site-logo__image[data-astro-cid-nen7h5rs] {
+  width: clamp(48px, 5vw, 72px);
+  height: auto;
+}
+
+.site-logo__text[data-astro-cid-nen7h5rs] {
+  display: none;
+  color: var(--color-navy);
+  font-family: var(--font-accent);
+  font-size: clamp(.52rem, .6vw, .64rem);
+  line-height: 1.16;
+  font-weight: 700;
+}
+
+.menu-toggle[data-astro-cid-nen7h5rs] {
+  order: 1;
+  width: 42px;
+  height: 42px;
+  padding: 8px 4px;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  flex: none;
+}
+
+.menu-toggle[data-astro-cid-nen7h5rs] span[data-astro-cid-nen7h5rs] {
+  width: 28px;
+  height: 2px;
+  background: var(--color-navy);
+  border-radius: 2px;
+}
+
+.site-header__cta[data-astro-cid-nen7h5rs] {
+  order: 2;
+  margin-left: auto;
+  min-height: 38px;
+  padding-inline: clamp(15px, 4.5vw, 22px);
+  font-size: clamp(.61rem, 2.5vw, .72rem);
+}
+
+.site-nav[data-astro-cid-nen7h5rs] {
+  text-align: center;
+  display: none;
+  position: absolute;
+  z-index: 50;
+  top: 100%;
+  left: calc(var(--page-gutter) * -1);
+  right: calc(var(--page-gutter) * -1);
+  padding: 24px var(--page-gutter) 28px;
+  background: var(--color-white);
+  box-shadow: 0 18px 35px #1418381f;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.site-nav[data-astro-cid-nen7h5rs].is-open {
+  display: flex;
+}
+
+.site-nav[data-astro-cid-nen7h5rs] a[data-astro-cid-nen7h5rs] {
+  color: var(--color-navy);
+  font-family: var(--font-heading);
+  font-size: .78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.site-nav[data-astro-cid-nen7h5rs] a[data-astro-cid-nen7h5rs]:hover {
+  color: var(--color-red);
+}
+
+@media (width >= 768px) {
+  .site-logo[data-astro-cid-nen7h5rs] {
+    display: flex;
+    order: 1;
+  }
+
+  .menu-toggle[data-astro-cid-nen7h5rs] {
+    order: 3;
+  }
+
+  .site-header__cta[data-astro-cid-nen7h5rs] {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .site-nav[data-astro-cid-nen7h5rs] {
+    top: 100%;
+  }
+}
+
+@media (width >= 1024px) {
+  .site-logo__text[data-astro-cid-nen7h5rs] {
+    display: block;
+  }
+
+  .site-nav[data-astro-cid-nen7h5rs] {
+    display: flex;
+    position: static;
+    order: 2;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+    gap: clamp(22px, 2.5vw, 38px);
+    background: none;
+    box-shadow: none;
+  }
+
+  .site-nav[data-astro-cid-nen7h5rs] a[data-astro-cid-nen7h5rs] {
+    font-size: clamp(.72rem, .75vw, .82rem);
+  }
+
+  .site-header__cta[data-astro-cid-nen7h5rs] {
+    order: 3;
+    margin-left: clamp(6px, 1vw, 18px);
+  }
+
+  .menu-toggle[data-astro-cid-nen7h5rs] {
+    display: none;
+  }
+}
+.epps-footer[data-astro-cid-jo6i4kqk] {
+  width: 100%;
+  background: var(--color-navy-secondary);
+  color: var(--color-white);
+  padding-block: clamp(48px, 5vw, 72px);
+}
+
+.epps-footer__inner[data-astro-cid-jo6i4kqk] {
+  width: calc(100% - 80px);
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.epps-footer__brand[data-astro-cid-jo6i4kqk] {
+  flex: none;
+}
+
+.epps-footer__logo[data-astro-cid-jo6i4kqk] {
+  display: block;
+}
+
+.epps-footer__logo[data-astro-cid-jo6i4kqk] img[data-astro-cid-jo6i4kqk] {
+  display: block;
+  width: clamp(72px, 6vw, 92px);
+  height: auto;
+}
+
+.epps-footer__nav[data-astro-cid-jo6i4kqk] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  flex: none;
+}
+
+.epps-footer__nav[data-astro-cid-jo6i4kqk] a[data-astro-cid-jo6i4kqk] {
+  color: var(--color-yellow);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.epps-footer__nav[data-astro-cid-jo6i4kqk] a[data-astro-cid-jo6i4kqk]:hover {
+  color: var(--color-white);
+}
+
+.epps-footer__contact[data-astro-cid-jo6i4kqk] {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  flex: none;
+}
+
+.epps-footer__contact-link[data-astro-cid-jo6i4kqk] {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.epps-footer__socials[data-astro-cid-jo6i4kqk] {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.epps-footer__socials[data-astro-cid-jo6i4kqk] a[data-astro-cid-jo6i4kqk] {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--color-yellow);
+  border-radius: 50%;
+  color: var(--color-yellow);
+  font-size: 16px;
+  transition: all .2s;
+}
+
+.epps-footer__socials[data-astro-cid-jo6i4kqk] a[data-astro-cid-jo6i4kqk]:hover {
+  background-color: var(--color-red);
+  border-color: var(--color-red);
+  color: var(--color-yellow);
+  transform: translateY(-2px);
+}
+
+.epps-footer__cta-wrapper[data-astro-cid-jo6i4kqk] {
+  flex: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+}
+
+.epps-footer__signup[data-astro-cid-jo6i4kqk] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 145px;
+  min-height: 43px;
+  padding-inline: 22px;
+  background: var(--color-red);
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.epps-footer__signup[data-astro-cid-jo6i4kqk]:hover {
+  background: var(--color-red-hover);
+}
+
+@media (width >= 768px) and (width <= 1023px) {
+  .epps-footer__inner[data-astro-cid-jo6i4kqk] {
+    width: calc(100% - 64px);
+    display: grid;
+    grid-template-columns: auto 1fr 1fr 1.4fr;
+    gap: 30px;
+  }
+
+  .epps-footer__cta-wrapper[data-astro-cid-jo6i4kqk] {
+    grid-column: 4;
+    justify-content: flex-start;
+    padding-top: 5px;
+  }
+}
+
+@media (width <= 767px) {
+  .epps-footer[data-astro-cid-jo6i4kqk] {
+    padding-block: 48px;
+  }
+
+  .epps-footer__inner[data-astro-cid-jo6i4kqk] {
+    width: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 34px;
+    text-align: center;
+  }
+
+  .epps-footer__brand[data-astro-cid-jo6i4kqk], .epps-footer__nav[data-astro-cid-jo6i4kqk], .epps-footer__contact[data-astro-cid-jo6i4kqk], .epps-footer__cta-wrapper[data-astro-cid-jo6i4kqk] {
+    align-items: center;
+  }
+
+  .epps-footer__nav[data-astro-cid-jo6i4kqk] {
+    align-items: center;
+  }
+
+  .epps-footer__contact[data-astro-cid-jo6i4kqk] {
+    align-items: center;
+  }
+
+  .epps-footer__contact-link[data-astro-cid-jo6i4kqk] {
+    justify-content: center;
+  }
+
+  .epps-footer__socials[data-astro-cid-jo6i4kqk] {
+    justify-content: center;
+  }
+
+  .epps-footer__cta-wrapper[data-astro-cid-jo6i4kqk] {
+    justify-content: center;
+    padding-top: 0;
+  }
+}
+:root {
+
+  /* =====================================================
+     COLORS
+  ===================================================== */
+  --radius-card-alt: 10px 90px 10px 90px;
+  --color-red: #CF0000;
+  --color-red-hover: #800000;
+
+  --color-navy: #141838;
+  --color-navy-secondary: #1E286E;
+  --color-navy-alt: #141A45;
+
+  --color-yellow: #FFE100;
+
+  --color-white: #FFFFFF;
+  --color-bg-light: #F8FAFC;
+
+  --color-text-dark: #141838;
+  --color-text-muted: #5A6578;
+  --color-text-light: #E2E8F0;
+
+
+  /* =====================================================
+     TYPOGRAPHY
+  ===================================================== */
+
+  --font-heading: "Montserrat", "Alexandria", sans-serif;
+  --font-body: "Montserrat", "Alexandria", sans-serif;
+  --font-accent: "Alexandria", sans-serif;
+
+
+  /* =====================================================
+     SHADOWS
+  ===================================================== */
+
+  --shadow-sm:
+    0 4px 14px rgba(20, 24, 56, 0.08);
+
+  --shadow-md:
+    0 10px 30px rgba(20, 24, 56, 0.12);
+
+  --shadow-lg:
+    0 20px 50px rgba(20, 24, 56, 0.16);
+
+
+  /* =====================================================
+     BORDERS
+  ===================================================== */
+
+  --border-light:
+    1px solid rgba(20, 24, 56, 0.10);
+
+  --border-white:
+    1px solid rgba(255, 255, 255, 0.18);
+
+
+  /* =====================================================
+     RADIUS
+  ===================================================== */
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-pill: 999px;
+
+
+  /* =====================================================
+     TRANSITIONS
+  ===================================================== */
+
+  --transition-fast:
+    0.2s ease;
+
+  --transition-normal:
+    0.3s ease;
+
+  --transition-smooth:
+    0.7s cubic-bezier(0.22, 1, 0.36, 1);
+
+
+  /* =====================================================
+     Z-INDEX
+  ===================================================== */
+
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-modal: 1000;
+
+}/* =========================================================
+   EPPS — GLOBAL.CSS
+   Base compartida + escalado fluido con clamp().
+   Los estilos propios de cada sección viven en su .astro.
+   ========================================================= */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  overflow-x: hidden;
+  background: var(--color-white);
+  color: var(--color-text-dark);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+a,
+button,
+input,
+textarea,
+select,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* =========================================================
+   LAYOUT GLOBAL
+   ========================================================= */
+
+:root {
+  --page-gutter: clamp(24px, 5vw, 40px);
+  --section-space: clamp(58px, 7vw, 104px);
+  --page-margin: clamp(16px, 5.56vw, 80px);
+
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: var(--page-margin);
+  box-sizing: border-box;
+}
+
+.section {
+  padding-block: var(--section-space);
+}
+
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* =========================================================
+   UTILIDADES
+   ========================================================= */
+
+.eyebrow {
+  font-family: var(--font-heading);
+  font-size: clamp(.62rem, .75vw, .78rem);
+  letter-spacing: .12em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-red);
+}
+
+.center {
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* =========================================================
+   BOTONES GLOBALES
+   ========================================================= */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(40px, 4vw, 46px);
+  padding: clamp(10px, 1vw, 12px) clamp(18px, 2vw, 26px);
+  border-radius: 999px;
+  font-family: var(--font-heading);
+  font-size: clamp(.64rem, .72vw, .78rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+  transition: transform .25s ease, background-color .25s ease, color .25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-red {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.btn-red:hover {
+  background: var(--color-red-hover);
+}
+
+.btn-yellow {
+  background: var(--color-yellow);
+  color: var(--color-navy);
+}
+
+.btn-blue {
+  background: var(--color-navy-secondary);
+  color: var(--color-white);
+}
+
+.btn-blue:hover {
+  background: var(--color-navy);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}
+
+/* =====================================================
+   GLOBAL ANIMATIONS
+===================================================== */
+
+/* ---------- FADE UP ---------- */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ---------- FADE IN ---------- */
+
+.reveal-fade {
+  opacity: 0;
+
+  transition:
+    opacity 0.8s ease;
+}
+
+.reveal-fade.is-visible {
+  opacity: 1;
+}
+
+
+/* ---------- DESDE IZQUIERDA ---------- */
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-24px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ---------- DESDE DERECHA ---------- */
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(24px);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/* ---------- SCALE ---------- */
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.97);
+
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+/* ---------- DELAYS ---------- */
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(20px);
+  }
+
+  .reveal-left.is-visible,
+  .reveal-right.is-visible {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal,
+  .reveal-fade,
+  .reveal-left,
+  .reveal-right,
+  .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+}
