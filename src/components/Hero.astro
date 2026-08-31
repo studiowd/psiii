@@ -1,35 +1,79 @@
 <section class="hero" id="inicio">
   <div class="container hero__inner">
 
+    <!-- =====================================================
+         CONTENIDO
+         ===================================================== -->
     <div class="hero__content">
 
+      <!-- LOGO MOBILE -->
       <img
         src="/images/logo.svg"
         alt="EPPS"
         class="hero__mobile-logo reveal-scale"
       />
 
+      <!-- EYEBROW -->
       <p class="hero__eyebrow reveal-fade delay-1">
         Escuela Psicoanalítica de Psicología Social
       </p>
 
-      <h1 class="hero__title reveal delay-1">
-        Formación y transmisión
-        <span class="mobile-break"></span>
-        <span class="desktop-space"> </span>
+      <!-- =====================================================
+           TÍTULO
+           Un solo H1 semántico.
+           Dos composiciones visuales.
+           ===================================================== -->
+      <h1
+        class="hero__title reveal delay-1"
+        aria-label="Formación y transmisión del pensamiento psicosocial y psicoanalítico"
+      >
 
-        del pensamiento psicosocial
-        <span class="mobile-break"></span>
-        <span class="desktop-space"> </span>
+        <!-- MOBILE -->
+        <span class="hero__title-mobile" aria-hidden="true">
+          <span>Formación y transmisión</span>
+          <span>del pensamiento psicosocial</span>
+          <span>y psicoanalítico</span>
+        </span>
 
-        y psicoanalítico
+        <!-- DESKTOP -->
+        <span class="hero__title-desktop" aria-hidden="true">
+          <span>Formación y transmisión</span>
+          <span>del pensamiento</span>
+          <span>psicosocial y psicoanalítico</span>
+        </span>
+
       </h1>
 
-      <p class="hero__description reveal delay-2">
-        Lectura rigurosa del psiquismo en lo individual, lo vincular, lo grupal,
-        lo institucional y lo comunitario.
+      <!-- =====================================================
+           DESCRIPCIÓN
+           ===================================================== -->
+
+      <p
+        class="hero__description reveal delay-2"
+        aria-label="Lectura rigurosa del psiquismo en lo individual, lo vincular, lo grupal, lo institucional y lo comunitario."
+      >
+
+        <!-- MOBILE -->
+        <span class="hero__description-mobile" aria-hidden="true">
+          <span>Lectura rigurosa del psiquismo en lo</span>
+          <span>individual, lo vincular, lo grupal, lo</span>
+          <span>institucional y lo comunitario.</span>
+        </span>
+
+        <!-- DESKTOP -->
+        <span class="hero__description-desktop" aria-hidden="true">
+          <span>
+            Lectura rigurosa del psiquismo en lo individual, lo vincular,
+          </span>
+
+          <span>
+            lo grupal, lo institucional y lo comunitario.
+          </span>
+        </span>
+
       </p>
 
+      <!-- CTA -->
       <a
         class="btn btn-blue hero__cta reveal delay-3"
         href="#formacion"
@@ -39,317 +83,787 @@
 
     </div>
 
+
+    <!-- =====================================================
+         LOGO DESKTOP
+         ===================================================== -->
     <div class="hero__visual">
+
       <img
         src="/images/logo.svg"
         alt="EPPS"
         class="hero__visual-logo reveal-right delay-2"
       />
+
     </div>
 
   </div>
 </section>
 
+
 <style>
+
+  /* =========================================================
+     HERO
+     ========================================================= */
+
   .hero {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(105deg, #b80000 0%, var(--color-red) 70%, #df0c0c 100%);
+
+    background:
+      linear-gradient(
+        105deg,
+        #b80000 0%,
+        var(--color-red) 70%,
+        #df0c0c 100%
+      );
+
     color: var(--color-white);
   }
 
+
   .hero__inner {
-    min-height: clamp(530px, 120vw, 640px);
     display: grid;
     align-items: center;
   }
+
+
+
+  /* =========================================================
+     MOBILE FIRST
+     ========================================================= */
+
+  .hero__inner {
+    min-height: 350px;
+  }
+
 
   .hero__content {
     position: relative;
     z-index: 2;
-    width:  clamp(90vw, 100vw, 90vw);
-    max-width: 700px;
-    padding-block: clamp(42px, 10vw, 72px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-inline: auto;
-  }
 
-  .hero__mobile-logo {
-    display: block;
-    width: clamp(118px, 34vw, 160px);
-    height: auto;
-    margin-bottom: clamp(24px, 7vw, 34px);
-  }
-
-  .hero__eyebrow {
-    margin-bottom: clamp(10px, 4vw, 24px);
-    color: var(--color-yellow);
-    font-family: var(--font-heading);
-    font-size: clamp(.35rem, 2.8vw, .70rem);
-    line-height: 1.3;
-    font-weight: 800;
-    letter-spacing: .08em;
-    text-transform: uppercase;
-  }
-
-  .hero__title {
-   
-    font-size: clamp(1.60rem, 2.8vw, 1.87rem);
-    line-height: 1.4;
-    font-weight: 800;
-    letter-spacing: -.04em;
-  }
-
-  .mobile-break {
-    display: block;
-  }
-
-  .desktop-space {
-    display: none;
-  }
-
-  .hero__description {
-    width:  clamp(70vw, 100vw, 70px);
-    margin-top: clamp(22px, 5vw, 30px);
-    font-size: clamp(1rem, 3.6vw, 1.08rem);
-    line-height: 1.42;
-    color: rgba(255, 255, 255, .96);
-  }
-
-  .hero__cta {
-    margin-top: clamp(28px, 6vw, 36px);
-    min-width: clamp(185px, 48vw, 220px);
-  }
-
-  .hero__visual {
-    display: none;
-  }
-
-  /* =========================================================
-   TABLET 768px - 1023px
-   ========================================================= */
-
-@media (min-width: 768px) and (max-width: 1023px) {
-
-  .hero {
-    min-height: 395px;
-  }
-
-  .hero__inner {
-    min-height: 395px;
-
-    display: grid;
-
-    grid-template-columns:
-      minmax(0, 1.25fr)
-      minmax(240px, .75fr);
-
-    gap: 30px;
-
-    align-items: center;
-
-    padding-block: 48px;
-  }
-
-
-  /* =========================================
-     CONTENIDO IZQUIERDA
-     ========================================= */
-
-  .hero__content {
-    width: 100%;
-    max-width: 520px;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    text-align: left;
-  }
-
-
-  /* LOGO MOBILE OCULTO */
-
-  .hero__mobile-logo {
-    display: none;
-  }
-
-
-  /* EYEBROW */
-
-  .hero__eyebrow {
-    margin: 0 0 34px;
-
-    font-size: .68rem;
-    line-height: 1.2;
-
-    letter-spacing: .06em;
-
-    text-align: left;
-  }
-
-
-  /* =========================================
-     TÍTULO
-     ========================================= */
-
-  .mobile-break {
-    display: none;
-  }
-
-  .desktop-space {
-    display: inline;
-  }
-
-
-  .hero__title {
     width: 100%;
     max-width: 430px;
 
-    margin: 0;
+    margin-inline: auto;
 
-    font-size: clamp(1.75rem, 3.5vw, 2rem);
+    padding: 22px 8px 30px;
 
-    line-height: 1.08;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    letter-spacing: -.035em;
-
-    text-align: left;
+    text-align: center;
   }
 
 
-  /* =========================================
+
+  /* =========================================================
+     LOGO MOBILE
+     ========================================================= */
+
+  .hero__mobile-logo {
+    display: block;
+
+    width: 88px;
+    height: auto;
+
+    margin: 0 0 18px;
+  }
+
+
+
+  /* =========================================================
+     EYEBROW
+     ========================================================= */
+
+  .hero__eyebrow {
+    margin: 0 0 17px;
+
+    color: var(--color-yellow);
+
+    font-family: var(--font-heading);
+
+    font-size: 0.54rem;
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    letter-spacing: 0.025em;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+  }
+
+
+
+  /* =========================================================
+     TÍTULO GENERAL
+     ========================================================= */
+
+  .hero__title {
+    width: 100%;
+
+    margin: 0;
+
+    font-family: var(--font-heading);
+
+    font-weight: 800;
+
+    letter-spacing: -0.04em;
+
+    color: var(--color-white);
+  }
+
+
+
+  /* =========================================================
+     TÍTULO MOBILE
+     ========================================================= */
+
+  .hero__title-mobile {
+    display: block;
+
+    width: 100%;
+
+    font-size: clamp(
+      1.08rem,
+      5.6vw,
+      1.32rem
+    );
+
+    line-height: 1.16;
+  }
+
+
+  .hero__title-mobile > span {
+    display: block;
+
+    white-space: nowrap;
+  }
+
+
+
+  /* Desktop oculto en mobile */
+
+  .hero__title-desktop {
+    display: none;
+  }
+
+
+
+  /* =========================================================
      DESCRIPCIÓN
-     ========================================= */
+     ========================================================= */
 
   .hero__description {
     width: 100%;
-    max-width: 470px;
 
-    margin-top: 12px;
+    margin: 16px 0 0;
 
-    font-size: .82rem;
-
-    line-height: 1.35;
-
-    text-align: left;
+    color: rgba(255,255,255,.97);
   }
 
 
-  /* =========================================
-     CTA
-     ========================================= */
-
-  .hero__cta {
-    margin-top: 28px;
-
-    min-width: 0;
-
-    align-self: flex-start;
-  }
-
-
-  /* =========================================
-     VISUAL DERECHA
-     ========================================= */
-
-  .hero__visual {
-    display: flex;
-
-    width: 100%;
-    height: 100%;
-
-    align-items: flex-start;
-    justify-content: flex-end;
-
-    margin: 0;
-
-    min-width: 0;
-  }
-
-
-  .hero__visual-logo {
+  .hero__description-mobile {
     display: block;
 
-    width: clamp(230px, 34vw, 300px);
+    font-size: clamp(
+      0.7rem,
+      3.25vw,
+      0.82rem
+    );
 
-    max-width: none;
-
-    height: auto;
+    line-height: 1.27;
   }
 
-}
 
-  @media (min-width: 1024px) {
+  .hero__description-mobile > span {
+    display: block;
+
+    white-space: nowrap;
+  }
+
+
+  .hero__description-desktop {
+    display: none;
+  }
+
+
+
+  /* =========================================================
+     CTA
+     ========================================================= */
+
+  .hero__cta {
+    margin-top: 23px;
+
+    min-width: 160px;
+
+    padding: 10px 20px;
+
+    align-self: center;
+
+    font-size: 0.58rem;
+
+    font-weight: 800;
+
+    text-transform: uppercase;
+  }
+
+
+
+  /* =========================================================
+     VISUAL DESKTOP
+     ========================================================= */
+
+  .hero__visual {
+    display: none;
+  }
+
+
+
+  /* =========================================================
+     MOBILE PEQUEÑO
+     <= 389px
+     ========================================================= */
+
+  @media (max-width: 389px) {
+
     .hero__inner {
-      min-height: clamp(500px, 42vw, 620px);
-      grid-template-columns: minmax(0, 1.2fr) minmax(320px, .8fr);
-      gap: clamp(36px, 4vw, 70px);
+      min-height: 350px;
     }
+
 
     .hero__content {
-      max-width: 760px;
+      padding:
+        18px
+        5px
+        26px;
+    }
+
+
+    .hero__mobile-logo {
+      width: 78px;
+
+      margin-bottom: 15px;
+    }
+
+
+    .hero__eyebrow {
+      margin-bottom: 15px;
+
+      font-size: 0.46rem;
+    }
+
+
+    .hero__title-mobile {
+      font-size: 1.06rem;
+
+      line-height: 1.17;
+    }
+
+
+    .hero__description {
+      margin-top: 15px;
+    }
+
+
+    .hero__description-mobile {
+      font-size: 0.69rem;
+
+      line-height: 1.26;
+    }
+
+
+    .hero__cta {
+      margin-top: 21px;
+
+      min-width: 150px;
+    }
+
+  }
+
+
+
+  /* =========================================================
+     390px - 430px
+     TU REFERENCIA MOBILE
+     ========================================================= */
+
+  @media (min-width: 390px) and (max-width: 430px) {
+
+    .hero__inner {
+      min-height: 390px;
+    }
+
+
+    .hero__content {
+      max-width: 430px;
+
+      padding:
+        24px
+        6px
+        30px;
+    }
+
+
+    .hero__mobile-logo {
+      width: 92px;
+
+      margin-bottom: 18px;
+    }
+
+
+    .hero__eyebrow {
+      margin-bottom: 17px;
+
+      font-size: 0.55rem;
+    }
+
+
+    .hero__title-mobile {
+      font-size: 1.30rem;
+
+      line-height: 1.15;
+    }
+
+
+    .hero__description {
+      margin-top: 17px;
+    }
+
+
+    .hero__description-mobile {
+      font-size: 0.81rem;
+
+      line-height: 1.27;
+    }
+
+
+    .hero__cta {
+      margin-top: 23px;
+
+      min-width: 160px;
+    }
+
+  }
+
+
+
+  /* =========================================================
+     431px - 767px
+     ========================================================= */
+
+  @media (min-width: 431px) and (max-width: 767px) {
+
+    .hero__inner {
+      min-height: 430px;
+    }
+
+
+    .hero__content {
+      max-width: 540px;
+
+      padding-block: 36px;
+    }
+
+
+    .hero__mobile-logo {
+      width: 105px;
+
+      margin-bottom: 20px;
+    }
+
+
+    .hero__eyebrow {
+      font-size: 0.62rem;
+    }
+
+
+    .hero__title-mobile {
+      font-size: 1.5rem;
+    }
+
+
+    .hero__description-mobile {
+      font-size: 0.88rem;
+    }
+
+
+    .hero__cta {
+      margin-top: 26px;
+
+      min-width: 180px;
+    }
+
+  }
+
+
+
+  /* =========================================================
+     TABLET / DESKTOP
+     768px+
+     ========================================================= */
+
+  @media (min-width: 768px) {
+
+    .hero__inner {
+      min-height: 430px;
+
+      grid-template-columns:
+        minmax(0, 1.35fr)
+        minmax(260px, .65fr);
+
+      gap: 36px;
+    }
+
+
+    .hero__content {
+      width: 100%;
+
+      max-width: 680px;
+
       margin: 0;
-      padding-block: clamp(64px, 6vw, 88px);
+
+      padding: 50px 0;
+
       align-items: flex-start;
+
       text-align: left;
     }
+
+
+
+    /* Logo mobile OFF */
 
     .hero__mobile-logo {
       display: none;
     }
 
+
+
+    /* EYEBROW */
+
     .hero__eyebrow {
-      font-size: clamp(.68rem, .8vw, .84rem);
+      margin-bottom: 28px;
+
+      font-size: 0.70rem;
+
+      text-align: left;
+
+      white-space: normal;
     }
 
-    .mobile-break {
+
+
+    /* =====================================================
+       CAMBIO TITULO MOBILE -> DESKTOP
+       ===================================================== */
+
+    .hero__title-mobile {
       display: none;
     }
 
-    .desktop-space {
-      display: inline;
+
+    .hero__title-desktop {
+      display: block;
+
+      width: 100%;
+
+      font-size: clamp(
+        2rem,
+        3.4vw,
+        2.45rem
+      );
+
+      line-height: 1.06;
     }
 
-    .hero__title {
-       max-width: 425px;
-    font-size: clamp(1.60rem, 2.8vw, 1.90rem);
-    line-height: 1.4;
+
+    .hero__title-desktop > span {
+      display: block;
+
+      white-space: nowrap;
     }
+
+
+
+    /* =====================================================
+       DESCRIPCIÓN DESKTOP
+       ===================================================== */
+
+    .hero__description-mobile {
+      display: none;
+    }
+
+
+    .hero__description-desktop {
+      display: block;
+
+      margin-top: 0;
+
+      font-size: 0.90rem;
+
+      line-height: 1.35;
+    }
+
+
+    .hero__description-desktop > span {
+      display: block;
+
+      white-space: nowrap;
+    }
+
+
 
     .hero__description {
-      max-width: 640px;
-      font-size: clamp(.98rem, 1.2vw, 1.15rem);
+      max-width: 620px;
+
+      margin-top: 14px;
+
+      text-align: left;
     }
+
+
+
+    /* CTA */
+
+    .hero__cta {
+      margin-top: 28px;
+
+      min-width: 200px;
+
+      align-self: flex-start;
+
+      font-size: 0.70rem;
+    }
+
+
+
+    /* LOGO DERECHA */
 
     .hero__visual {
       display: flex;
-      align-items: center;
-      justify-content: flex-end;
+
+      width: 100%;
+
       min-width: 0;
+
+      align-items: center;
+
+      justify-content: flex-end;
     }
 
+
     .hero__visual-logo {
-      width: clamp(320px, 30vw, 430px);
+      display: block;
+
+      width: clamp(
+        250px,
+        31vw,
+        340px
+      );
+
       max-width: none;
+
       height: auto;
     }
+
   }
 
-  @media (min-width: 1280px) {
+
+
+  /* =========================================================
+     1024px+
+     ========================================================= */
+
+  @media (min-width: 1024px) {
+
     .hero__inner {
-      grid-template-columns: minmax(0, 1.2fr) 440px;
+      min-height: 470px;
+
+      grid-template-columns:
+        minmax(0, 1.3fr)
+        minmax(340px, .7fr);
+
+      gap: 46px;
     }
+
+
+    .hero__content {
+      max-width: 740px;
+
+      padding-block: 58px;
+    }
+
+
+    .hero__eyebrow {
+      margin-bottom: 32px;
+
+      font-size: 0.78rem;
+    }
+
+
+    .hero__title-desktop {
+      font-size: clamp(
+        2.15rem,
+        2.75vw,
+        2.65rem
+      );
+
+      line-height: 1.04;
+    }
+
+
+    .hero__description {
+      margin-top: 16px;
+    }
+
+
+    .hero__description-desktop {
+      font-size: 1rem;
+
+      line-height: 1.38;
+    }
+
+
+    .hero__cta {
+      margin-top: 30px;
+
+      min-width: 220px;
+
+      font-size: 0.72rem;
+    }
+
 
     .hero__visual-logo {
-      width: clamp(390px, 31vw, 440px);
+      width: clamp(
+        320px,
+        32vw,
+        390px
+      );
     }
+
   }
+
+
+
+  /* =========================================================
+     1280px+
+     ========================================================= */
+
+  @media (min-width: 1280px) {
+
+    .hero__inner {
+      min-height: 440px;
+
+      grid-template-columns:
+        minmax(0, 1.35fr)
+        420px;
+
+      gap: 40px;
+    }
+
+
+    .hero__content {
+      max-width: 760px;
+
+      padding-block: 50px;
+    }
+
+
+    .hero__eyebrow {
+      margin-bottom: 30px;
+
+      font-size: 0.82rem;
+    }
+
+
+    .hero__title-desktop {
+      font-size: 2.55rem;
+
+      line-height: 1.03;
+    }
+
+
+    .hero__description-desktop {
+      font-size: 1rem;
+
+      line-height: 1.4;
+    }
+
+
+    .hero__visual-logo {
+      width: 390px;
+    }
+
+  }
+
+
+
+  /* =========================================================
+     1440px+
+     TU REFERENCIA DESKTOP
+     ========================================================= */
+
+  @media (min-width: 1440px) {
+
+    .hero__inner {
+      min-height: 435px;
+
+      grid-template-columns:
+        minmax(0, 1fr)
+        460px;
+
+      gap: 44px;
+    }
+
+
+    .hero__content {
+      max-width: 780px;
+
+      padding-block: 48px;
+    }
+
+
+    .hero__eyebrow {
+      margin-bottom: 30px;
+
+      font-size: 0.84rem;
+    }
+
+
+    .hero__title-desktop {
+      font-size: 2.65rem;
+
+      line-height: 1.02;
+    }
+
+
+    .hero__description {
+      margin-top: 16px;
+    }
+
+
+    .hero__description-desktop {
+      font-size: 1.02rem;
+
+      line-height: 1.38;
+    }
+
+
+    .hero__cta {
+      margin-top: 30px;
+    }
+
+
+    .hero__visual-logo {
+      width: 420px;
+    }
+
+  }
+
 </style>
