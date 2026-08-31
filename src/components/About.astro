@@ -1,36 +1,71 @@
 <section id="nosotros" class="about">
   <div class="container about-grid">
-   <div class="about-media">
- <video
-  class="about-video"
-  autoplay
-  muted
-  loop
-  playsinline
-  preload="metadata"
->
-  <source src="/videos/video-rector.mp4" type="video/mp4">
-</video>
-</div>
 
+    <!-- VIDEO: SIEMPRE VISIBLE -->
+    <div class="about-media">
+      <video
+          class="about-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"
+          controls
+        >
+        <source src="/videos/video-rector.mp4" type="video/mp4">
+      </video>
+    </div>
+
+
+    <!-- CONTENIDO -->
     <div class="about-content">
+
       <header class="about-heading">
-        <h2>Mario Gustavo Malaurie,</h2>
-        <p>Rector de la Escuela.</p>
+        <h2 class="reveal">
+          Mario Gustavo Malaurie,
+        </h2>
+
+        <p class="reveal delay-1">
+          Rector de la Escuela.
+        </p>
       </header>
 
+
       <div class="about-copy">
-        <div>
-          <p>Arquitecto, Psicólogo Social, Psicoanalista Didacta de la UIM, (Universidad Transcontinental de México) Supervisor de psicoanalistas, psicólogos sociales y analistas institucionales.</p>
-          <p>Analizado por referentes de la EOL (Dr. Samuel Basz y Lic. Mario Goldenberg) y Dr. Eduardo Glaz.</p>
+
+        <div class="reveal delay-2">
+          <p>
+            Arquitecto, Psicólogo Social, Psicoanalista Didacta de la UIM,
+            (Universidad Transcontinental de México) Supervisor de
+            psicoanalistas, psicólogos sociales y analistas institucionales.
+          </p>
+
+          <p>
+            Analizado por referentes de la EOL (Dr. Samuel Basz y Lic. Mario
+            Goldenberg) y Dr. Eduardo Glaz.
+          </p>
         </div>
-        <div>
-          <p>Integrante honorario de Fundación Givré, investigación y tratamiento de patologías neurológicas.</p>
-          <p>Periodista, escritor, conferencista, docente.</p>
-          <p><strong>Rector y fundador de Escuela Psicoanalítica de Psicología Social en 1999.</strong></p>
+
+
+        <div class="reveal delay-3">
+          <p>
+            Integrante honorario de Fundación Givré, investigación y
+            tratamiento de patologías neurológicas.
+            Periodista, escritor, conferencista, docente.
+          </p>
+
+          <p>
+            <strong>
+              Rector y fundador de Escuela Psicoanalítica de Psicología Social
+              en 1999.
+            </strong>
+          </p>
         </div>
+
       </div>
+
     </div>
+
   </div>
 </section>
 
@@ -64,6 +99,7 @@
   height: 100%;
   object-fit: contain;
   object-position: center;
+  background-color: black;
 }
 
   .about-heading h2 {

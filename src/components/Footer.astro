@@ -1,41 +1,86 @@
 <footer class="epps-footer">
   <div class="container epps-footer__inner">
 
-    <div class="epps-footer__brand">
+    <!-- LOGO -->
+    <div class="epps-footer__brand reveal-scale">
       <a href="#inicio" class="epps-footer__logo">
         <img src="/images/logo.svg" alt="EPPS" />
       </a>
     </div>
 
-    <nav class="epps-footer__nav">
+
+    <!-- NAV 1 -->
+    <nav class="epps-footer__nav reveal delay-1">
       <a href="#inicio">Inicio</a>
       <a href="#formacion">Formación</a>
       <a href="#nosotros">Nosotros</a>
     </nav>
 
-    <nav class="epps-footer__nav">
+
+    <!-- NAV 2 -->
+    <nav class="epps-footer__nav reveal delay-2">
       <a href="#clases">Clases</a>
       <a href="#preguntas">Preguntas</a>
       <a href="#">Legales</a>
     </nav>
 
-    <div class="epps-footer__contact">
-      <a href="tel:+5491127232303" class="epps-footer__contact-link">
-        ☎ +54 9 11 2723 2303
+
+    <!-- CONTACTO -->
+    <div class="epps-footer__contact reveal delay-2">
+
+      <a
+        href="tel:+5491127232303"
+        class="epps-footer__contact-link"
+      >
+        <i class="fa-solid fa-phone"></i>
+        +54 9 11 2723 2303
       </a>
 
-      <a href="mailto:info@escuelapsicoanalitica.org" class="epps-footer__contact-link">
-        ✉ info@escuelapsicoanalitica.org
+      <a
+        href="mailto:info@escuelapsicoanalitica.org"
+        class="epps-footer__contact-link"
+      >
+        <i class="fa-solid fa-envelope"></i>
+        info@escuelapsicoanalitica.org
       </a>
+
 
       <div class="epps-footer__socials">
-        <a href="#" aria-label="Facebook">f</a>
-        <a href="#" aria-label="Instagram">◎</a>
-        <a href="#" aria-label="YouTube">▶</a>
+
+        <a
+          href="https://www.facebook.com/EPPS.psicologia.social.psicoanalitica/"
+          aria-label="Facebook"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/psicologiasocialpsicoanalitica/"
+          aria-label="Instagram"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.youtube.com/channel/UCgIFBN4_9Sf_GgMoc5RI7_g"
+          aria-label="YouTube"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+
       </div>
+
     </div>
 
-    <div class="epps-footer__cta-wrapper">
+
+    <!-- CTA -->
+    <div class="epps-footer__cta-wrapper reveal-scale delay-3">
       <a href="#contacto" class="epps-footer__signup">
         Inscribirme
       </a>
@@ -112,7 +157,7 @@
 
   font-family: var(--font-heading);
   font-size: 13px;
-  font-weight: 800;
+  font-weight: 600;
 
   line-height: 1;
   text-transform: uppercase;
@@ -155,34 +200,7 @@
 /* =========================
    REDES
 ========================= */
-
-.epps-footer__socials {
-  display: flex;
-
-  align-items: center;
-
-  gap: 10px;
-
-  margin-top: 8px;
-}
-
-.epps-footer__socials a {
-  display: grid;
-  place-items: center;
-
-  width: 40px;
-  height: 40px;
-
-  border: 1.5px solid var(--color-yellow);
-  border-radius: 50%;
-
-  color: var(--color-yellow);
-
-  font-family: var(--font-heading);
-  font-size: 14px;
-  font-weight: 800;
-}
-
+.epps-footer__socials { display: flex; align-items: center; gap: 10px; margin-top: 8px; } .epps-footer__socials a { display: grid; place-items: center; width: 40px; height: 40px; border: 1.5px solid var(--color-yellow); border-radius: 50%; color: var(--color-yellow); font-size: 16px; transition: all 0.2s ease; } .epps-footer__socials a:hover { background-color: var(--color-red); border-color: var(--color-red); color: var(--color-yellow); transform: translateY(-2px); }
 
 /* =========================
    BOTÓN

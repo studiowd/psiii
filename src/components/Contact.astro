@@ -1,56 +1,137 @@
 <section id="contacto" class="epps-contact">
   <div class="container epps-contact__grid">
-    <div class="epps-contact__intro">
-      <h2>Contacto e<br />Inscripciones</h2>
+
+    <!-- INTRO -->
+    <div class="epps-contact__intro reveal-left">
+      <h2>
+        Contacto e<br />
+        Inscripciones
+      </h2>
+
       <p>
         Dejanos tu consulta para recibir orientación particular o reservar tu
         lugar en la cursada seleccionada.
       </p>
     </div>
 
-    <form class="epps-contact__form" data-contact-form>
+
+    <!-- FORMULARIO -->
+    <form
+      class="epps-contact__form reveal-right delay-1"
+      data-contact-form
+    >
+
       <div class="epps-contact__fields">
+
         <label class="epps-contact__field">
           <span>Nombre</span>
-          <input type="text" name="nombre" autocomplete="given-name" />
+          <input
+            type="text"
+            name="nombre"
+            autocomplete="given-name"
+          />
         </label>
 
         <label class="epps-contact__field">
           <span>Apellido</span>
-          <input type="text" name="apellido" autocomplete="family-name" />
+          <input
+            type="text"
+            name="apellido"
+            autocomplete="family-name"
+          />
         </label>
 
         <label class="epps-contact__field">
           <span>Email</span>
-          <input type="email" name="email" autocomplete="email" />
+          <input
+            type="email"
+            name="email"
+            autocomplete="email"
+          />
         </label>
 
         <label class="epps-contact__field">
           <span>Teléfono</span>
-          <input type="tel" name="telefono" autocomplete="tel" />
+          <input
+            type="tel"
+            name="telefono"
+            autocomplete="tel"
+          />
         </label>
+
       </div>
+
 
       <fieldset class="epps-contact__options">
         <legend>Consulta</legend>
 
-        <label><input type="radio" name="consulta" value="psicologia-social" /> Psicología Social Psicoanalítica</label>
-        <label><input type="radio" name="consulta" value="psicoanalisis" /> Psicoanálisis</label>
-        <label><input type="radio" name="consulta" value="modalidad-intensiva" /> Modalidad intensiva</label>
-        <label><input type="radio" name="consulta" value="seminario" /> Seminario</label>
+        <label>
+          <input
+            type="radio"
+            name="consulta"
+            value="psicologia-social"
+          />
+          Psicología Social Psicoanalítica
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="consulta"
+            value="psicoanalisis"
+          />
+          Psicoanálisis
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="consulta"
+            value="modalidad-intensiva"
+          />
+          Modalidad intensiva
+        </label>
+
+        <label>
+          <input
+            type="radio"
+            name="consulta"
+            value="seminario"
+          />
+          Seminario
+        </label>
       </fieldset>
+
 
       <label class="epps-contact__message">
         <span>Mensaje</span>
-        <textarea name="mensaje" rows="3" placeholder="Escribí tu mensaje..."></textarea>
+
+        <textarea
+          name="mensaje"
+          rows="3"
+          placeholder="Escribí tu mensaje..."
+        ></textarea>
       </label>
 
+
       <div class="epps-contact__submit-row">
-        <button class="epps-contact__submit" type="submit">ENVIAR</button>
+        <button
+          class="epps-contact__submit"
+          type="submit"
+        >
+          ENVIAR
+        </button>
       </div>
 
-      <p class="epps-contact__status" aria-live="polite" data-form-status></p>
+
+      <p
+        class="epps-contact__status"
+        aria-live="polite"
+        data-form-status
+      ></p>
+
     </form>
+
   </div>
 </section>
 

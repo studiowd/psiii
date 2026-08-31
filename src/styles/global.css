@@ -82,6 +82,25 @@ button {
   cursor: pointer;
 }
 
+a,
+button,
+input,
+textarea,
+select,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
+}
+
 /* =========================================================
    LAYOUT GLOBAL
    ========================================================= */
@@ -90,6 +109,7 @@ button {
   --page-gutter: clamp(24px, 5vw, 40px);
   --section-space: clamp(58px, 7vw, 104px);
   --page-margin: clamp(16px, 5.56vw, 80px);
+
 }
 
 .container {
@@ -195,11 +215,11 @@ section[id] {
 
 .reveal {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(20px);
 
   transition:
     opacity 0.7s ease,
-    transform 0.7s ease;
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal.is-visible {
@@ -226,11 +246,11 @@ section[id] {
 
 .reveal-left {
   opacity: 0;
-  transform: translateX(-40px);
+  transform: translateX(-24px);
 
   transition:
     opacity 0.7s ease,
-    transform 0.7s ease;
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal-left.is-visible {
@@ -243,11 +263,11 @@ section[id] {
 
 .reveal-right {
   opacity: 0;
-  transform: translateX(40px);
+  transform: translateX(24px);
 
   transition:
     opacity 0.7s ease,
-    transform 0.7s ease;
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal-right.is-visible {
@@ -260,11 +280,11 @@ section[id] {
 
 .reveal-scale {
   opacity: 0;
-  transform: scale(0.94);
+  transform: scale(0.97);
 
   transition:
     opacity 0.7s ease,
-    transform 0.7s ease;
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .reveal-scale.is-visible {
@@ -293,10 +313,41 @@ section[id] {
 
 
 /* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .reveal-left,
+  .reveal-right {
+    transform: translateY(20px);
+  }
+
+  .reveal-left.is-visible,
+  .reveal-right.is-visible {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =====================================================
    ACCESSIBILITY
 ===================================================== */
 
 @media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 
   .reveal,
   .reveal-fade,
