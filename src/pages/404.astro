@@ -1,0 +1,346 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Página no encontrada | EPPS">
+
+  <main class="error-page">
+
+    <!-- 404 de fondo -->
+    <div class="error-page__bg" aria-hidden="true">
+      <span class="error-page__number">404</span>
+    </div>
+
+    <!-- Contenido -->
+    <section class="error-page__content">
+
+      <img
+        src="/public/images/logo_negro_nav.svg"
+        alt="EPPS"
+        class="error-page__logo"
+      />
+
+      <p class="error-page__eyebrow">
+        Escuela Psicoanalítica de Psicología Social
+      </p>
+
+      <h1>
+        Esta página<br />
+        no fue encontrada.
+      </h1>
+
+      <p class="error-page__description">
+        El contenido que buscás puede haber cambiado de ubicación,
+        haber sido eliminado o la dirección ingresada puede ser incorrecta.
+      </p>
+
+      <div class="error-page__actions">
+        <a href="/" class="error-btn error-btn--primary">
+          Volver al inicio
+        </a>
+
+        <a href="/#formacion" class="error-btn error-btn--secondary">
+          Ver formación
+        </a>
+      </div>
+
+    </section>
+
+    <div class="error-page__decoration" aria-hidden="true"></div>
+
+  </main>
+
+</BaseLayout>
+
+<style>
+
+  .error-page {
+    position: relative;
+
+    min-height: 100svh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    padding: 110px 24px 80px;
+
+    background: var(--color-white, #ffffff);
+    color: var(--color-navy, #071c35);
+  }
+
+
+  /* ========================================
+     404 FONDO
+  ======================================== */
+
+  .error-page__bg {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    pointer-events: none;
+    user-select: none;
+
+    z-index: 0;
+  }
+
+  .error-page__number {
+    display: block;
+
+    font-family: var(--font-heading, sans-serif);
+
+    font-size: clamp(14rem, 32vw, 34rem);
+    font-weight: 700;
+
+    line-height: 0.8;
+    letter-spacing: -0.08em;
+
+    color: var(--color-navy, #071c35);
+
+    /* Antes estaba en 0.035 */
+    opacity: 0.08;
+  }
+
+
+  /* ========================================
+     CONTENIDO
+  ======================================== */
+
+  .error-page__content {
+    position: relative;
+    z-index: 2;
+
+    width: min(100%, 850px);
+
+    text-align: center;
+  }
+
+
+  /* ========================================
+     LOGO
+  ======================================== */
+
+  .error-page__logo {
+    display: block;
+
+    width: clamp(85px, 10vw, 120px);
+    height: auto;
+
+    margin: 0 auto 24px;
+  }
+
+
+  /* ========================================
+     EYEBROW
+  ======================================== */
+
+  .error-page__eyebrow {
+    margin: 0 0 16px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+
+    color: var(--color-blue, #2457d6);
+  }
+
+
+  /* ========================================
+     TITULO
+  ======================================== */
+
+  .error-page h1 {
+    margin: 0;
+
+    font-family: var(--font-heading, sans-serif);
+
+    font-size: clamp(1.6rem, 15vw, 1.9rem)
+    font-weight: 700;
+
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+
+    color: var(--color-navy, #071c35);
+  }
+
+
+  /* ========================================
+     DESCRIPCION
+  ======================================== */
+
+  .error-page__description {
+    max-width: 590px;
+
+    margin: 30px auto 0;
+
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    line-height: 1.7;
+
+    color: #596675;
+  }
+
+
+  /* ========================================
+     BOTONES
+  ======================================== */
+
+  .error-page__actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 36px;
+  }
+
+  .error-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 0 25px;
+
+    border-radius: 4px;
+
+    font-family: var(--font-heading, sans-serif);
+    font-size: 0.9rem;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+      transform 0.25s ease,
+      background-color 0.25s ease,
+      color 0.25s ease,
+      border-color 0.25s ease;
+  }
+
+  .error-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .error-btn--primary {
+    background: var(--color-blue, #2457d6);
+    border: 1px solid var(--color-blue, #2457d6);
+
+    color: #ffffff;
+  }
+
+  .error-btn--primary:hover {
+    background: var(--color-navy, #071c35);
+    border-color: var(--color-navy, #071c35);
+  }
+
+  .error-btn--secondary {
+    background: rgba(255, 255, 255, 0.7);
+
+    border: 1px solid rgba(7, 28, 53, 0.25);
+
+    color: var(--color-navy, #071c35);
+  }
+
+  .error-btn--secondary:hover {
+    border-color: var(--color-navy, #071c35);
+  }
+
+
+  /* ========================================
+     DECORACION
+  ======================================== */
+
+  .error-page__decoration {
+    position: absolute;
+
+    width: 420px;
+    height: 420px;
+
+    right: -210px;
+    bottom: -210px;
+
+    border: 1px solid rgba(36, 87, 214, 0.15);
+    border-radius: 50%;
+
+    pointer-events: none;
+  }
+
+  .error-page__decoration::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 55px;
+
+    border: 1px solid rgba(36, 87, 214, 0.12);
+    border-radius: inherit;
+  }
+
+
+  /* ========================================
+     MOBILE
+  ======================================== */
+
+  @media (max-width: 600px) {
+
+    .error-page {
+      padding: 90px 20px 60px;
+    }
+
+    .error-page__logo {
+      width: 80px;
+      margin-bottom: 20px;
+    }
+
+    .error-page__eyebrow {
+      max-width: 300px;
+
+      margin: 0 auto 20px;
+
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .error-page h1 {
+      font-size: clamp(1.6rem, 15vw, 1.9rem)
+
+      line-height: 0.95;
+    }
+
+    .error-page__description {
+      margin-top: 24px;
+
+      font-size: 0.95rem;
+      line-height: 1.65;
+    }
+
+    .error-page__actions {
+      flex-direction: column;
+
+      width: 100%;
+
+      margin-top: 30px;
+    }
+
+    .error-btn {
+      width: 100%;
+      max-width: 320px;
+    }
+
+    .error-page__number {
+      font-size: 55vw;
+
+      opacity: 0.07;
+    }
+  }
+
+</style>
